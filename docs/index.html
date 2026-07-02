@@ -372,7 +372,13 @@
       let frames = [];
       let position = 0;
       let timer = null;
+      let playing = false;
       let loadingFrame = false;
+      let hasRenderedFrame = false;
+      let productGeneration = 0;
+
+      const PLAYBACK_DELAY_MS = 1050;
+      const RETRY_DELAYS_MS = [0, 350, 900, 1800];
 
       function statusLabel(status) {
         return {
@@ -390,59 +396,154 @@
         statusBadge.textContent = statusLabel(status);
       }
 
+      function wait(milliseconds) {
+        return new Promise((resolve) => {
+          window.setTimeout(resolve, milliseconds);
+        });
+      }
+
       function stop() {
-        window.clearInterval(timer);
+        playing = false;
+        window.clearTimeout(timer);
         timer = null;
         toggleButton.textContent = "Reanudar";
       }
 
-      function start() {
-        if (timer || frames.length < 2) {
+      function scheduleNext(delay = PLAYBACK_DELAY_MS) {
+        window.clearTimeout(timer);
+        timer = null;
+
+        if (!playing || frames.length < 2) {
           return;
         }
 
-        timer = window.setInterval(() => {
-          void showFrame((position + 1) % frames.length);
-        }, 850);
+        timer = window.setTimeout(async () => {
+          if (!playing) {
+            return;
+          }
 
-        toggleButton.textContent = "Pausar";
+          await showFrame((position + 1) % frames.length, {
+            automatic: true,
+          });
+
+          scheduleNext(PLAYBACK_DELAY_MS);
+        }, delay);
       }
 
-      function preload(frame) {
+      function start() {
+        if (playing || frames.length < 2) {
+          return;
+        }
+
+        playing = true;
+        toggleButton.textContent = "Pausar";
+        scheduleNext();
+      }
+
+      function preloadOnce(frame) {
         return new Promise((resolve, reject) => {
           const probe = new Image();
+
           probe.referrerPolicy = "no-referrer";
           probe.decoding = "async";
-          probe.onload = () => resolve(frame);
-          probe.onerror = () => reject(
-            new Error(`No se pudo abrir ${frame.url}`)
-          );
+
+          const timeout = window.setTimeout(() => {
+            probe.src = "";
+            reject(
+              new Error(`Tiempo agotado al abrir ${frame.url}`)
+            );
+          }, 12000);
+
+          probe.onload = () => {
+            window.clearTimeout(timeout);
+            resolve(probe);
+          };
+
+          probe.onerror = () => {
+            window.clearTimeout(timeout);
+            reject(
+              new Error(`No se pudo abrir ${frame.url}`)
+            );
+          };
+
           probe.src = frame.url;
         });
       }
 
-      async function showFrame(index) {
-        if (!frames.length || loadingFrame) {
-          return;
+      async function preloadWithRetry(frame, generation) {
+        let lastError = null;
+
+        for (
+          let attempt = 0;
+          attempt < RETRY_DELAYS_MS.length;
+          attempt += 1
+        ) {
+          if (generation !== productGeneration) {
+            throw new Error("El producto seleccionado cambió.");
+          }
+
+          const delay = RETRY_DELAYS_MS[attempt];
+
+          if (delay > 0) {
+            await wait(delay);
+          }
+
+          try {
+            return await preloadOnce(frame);
+          } catch (error) {
+            lastError = error;
+            console.warn(
+              `Intento ${attempt + 1}/` +
+              `${RETRY_DELAYS_MS.length} fallido:`,
+              error
+            );
+          }
         }
 
-        loadingFrame = true;
-        const normalized = (index + frames.length) % frames.length;
+        throw lastError || new Error(
+          "No se pudo cargar el cuadro."
+        );
+      }
+
+      async function showFrame(index) {
+        if (!frames.length || loadingFrame) {
+          return false;
+        }
+
+        const generation = productGeneration;
+        const normalized =
+          (index + frames.length) % frames.length;
         const frame = frames[normalized];
 
+        loadingFrame = true;
         officialLink.href = frame.url;
         officialLink.hidden = false;
 
+        if (!hasRenderedFrame) {
+          message.hidden = false;
+          message.textContent =
+            "Cargando imagen de radar oficial…";
+        }
+
         try {
-          await preload(frame);
+          const loadedImage = await preloadWithRetry(
+            frame,
+            generation
+          );
+
+          if (generation !== productGeneration) {
+            return false;
+          }
 
           image.referrerPolicy = "no-referrer";
-          image.src = frame.url;
-          image.alt = `${currentProduct.name}, ${dateFormatter.format(
-            new Date(frame.timestamp_argentina)
-          )}`;
+          image.src = loadedImage.src;
+          image.alt =
+            `${currentProduct.name}, ${dateFormatter.format(
+              new Date(frame.timestamp_argentina)
+            )}`;
 
           position = normalized;
+          hasRenderedFrame = true;
           message.hidden = true;
 
           frameTime.textContent =
@@ -451,14 +552,38 @@
             )}`;
 
           frameCounter.textContent =
-            `${position + 1} de ${frames.length} cuadros`;
+            `${position + 1} de ${frames.length} cuadros · ` +
+            "reproducción en bucle";
+
+          return true;
 
         } catch (error) {
+          if (generation !== productGeneration) {
+            return false;
+          }
+
           console.error(error);
-          message.hidden = false;
-          message.textContent =
-            "El servidor del SMN no permitió cargar este cuadro. " +
-            "Podés abrirlo directamente con el botón oficial.";
+
+          /*
+            Se avanza aunque falle para no quedar atrapados en un cuadro.
+            En la próxima vuelta completa se vuelve a intentar.
+          */
+          position = normalized;
+
+          if (hasRenderedFrame) {
+            message.hidden = true;
+            frameCounter.textContent =
+              `El cuadro ${position + 1} demoró; ` +
+              "continuando con el siguiente.";
+          } else {
+            message.hidden = false;
+            message.textContent =
+              "Este cuadro no respondió después de varios intentos. " +
+              "Probando los siguientes automáticamente…";
+          }
+
+          return false;
+
         } finally {
           loadingFrame = false;
         }
@@ -470,8 +595,10 @@
           : product.name;
       }
 
-      function chooseProduct(productId) {
+      async function chooseProduct(productId) {
         stop();
+        productGeneration += 1;
+        const generation = productGeneration;
 
         currentProduct = manifest.products.find(
           (product) => product.id === productId
@@ -497,10 +624,13 @@
         nextButton.disabled = frames.length < 2;
         toggleButton.disabled = frames.length < 2;
 
+        hasRenderedFrame = false;
+        image.removeAttribute("src");
+        officialLink.hidden = true;
+        message.hidden = false;
+        message.textContent = "Cargando imágenes de radar…";
+
         if (!frames.length) {
-          image.removeAttribute("src");
-          officialLink.hidden = true;
-          message.hidden = false;
           message.textContent =
             currentProduct.last_error ||
             "Este producto no tiene imágenes disponibles.";
@@ -510,8 +640,16 @@
         }
 
         position = Math.max(0, frames.length - 1);
-        void showFrame(position);
-        start();
+
+        /*
+          Primero se carga un cuadro. Recién después se inicia el bucle,
+          evitando que varias solicitudes se superpongan.
+        */
+        await showFrame(position);
+
+        if (generation === productGeneration) {
+          start();
+        }
 
         const url = new URL(window.location.href);
         url.searchParams.set("product", currentProduct.id);
@@ -531,7 +669,8 @@
           const option = document.createElement("option");
           option.value = product.id;
           option.textContent =
-            `${productDisplayName(product)} · ${statusLabel(product.status)}`;
+            `${productDisplayName(product)} · ` +
+            `${statusLabel(product.status)}`;
 
           if (product.type === "mosaic") {
             mosaicGroup.appendChild(option);
@@ -544,21 +683,21 @@
       }
 
       select.addEventListener("change", () => {
-        chooseProduct(select.value);
+        void chooseProduct(select.value);
       });
 
-      previousButton.addEventListener("click", () => {
+      previousButton.addEventListener("click", async () => {
         stop();
-        void showFrame(position - 1);
+        await showFrame(position - 1);
       });
 
-      nextButton.addEventListener("click", () => {
+      nextButton.addEventListener("click", async () => {
         stop();
-        void showFrame(position + 1);
+        await showFrame(position + 1);
       });
 
       toggleButton.addEventListener("click", () => {
-        if (timer) {
+        if (playing) {
           stop();
         } else {
           start();
@@ -598,7 +737,7 @@
             window.location.href
           ).searchParams.get("product");
 
-          chooseProduct(
+          void chooseProduct(
             requestedProduct ||
             manifest.default_product_id ||
             "COMP_ARG"
