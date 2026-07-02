@@ -1,5 +1,621 @@
 <!doctype html>
-<html lang="es">
-  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Climate Radar</title></head>
-  <body><main><h1>Climate Radar</h1><p>Repositorio reservado para una etapa futura.</p><p>Estado: no implementado.</p></main></body>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071a33">
+  <meta name="referrer" content="no-referrer">
+  <title>Radares SMN · ClimateProyectar</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      background: #071a33;
+      color: #eef6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top right, #164b73 0, transparent 35%),
+        linear-gradient(180deg, #071a33, #0c2a4d);
+    }
+
+    main {
+      width: min(100% - 28px, 1040px);
+      margin: 0 auto;
+      padding: 30px 0 52px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+    }
+
+    .muted {
+      color: #a9bdd4;
+    }
+
+    .toolbar,
+    .viewer-card,
+    .summary-card {
+      margin-top: 20px;
+      padding: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.06);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: end;
+      gap: 14px;
+    }
+
+    label {
+      display: grid;
+      gap: 8px;
+      font-weight: 800;
+    }
+
+    select {
+      width: 100%;
+      min-height: 46px;
+      padding: 10px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      color: #eef6ff;
+      background: #102e50;
+      font: inherit;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-weight: 900;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .badge.ok {
+      color: #c9ffda;
+      background: rgba(36, 181, 90, 0.2);
+    }
+
+    .badge.delayed,
+    .badge.stale {
+      color: #ffe9a7;
+      background: rgba(230, 160, 20, 0.2);
+    }
+
+    .badge.error,
+    .badge.no_data {
+      color: #ffd1d1;
+      background: rgba(220, 55, 55, 0.2);
+    }
+
+    .image-stage {
+      position: relative;
+      display: block;
+      width: 100%;
+      min-height: 360px;
+      overflow: hidden;
+      border-radius: 14px;
+      background: #020810;
+    }
+
+    .image-stage img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    .message {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 28px;
+      color: #a9bdd4;
+      text-align: center;
+      background: #020810;
+    }
+
+    .message[hidden] {
+      display: none;
+    }
+
+    .viewer-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    .product-title {
+      margin: 0;
+      font-size: 1.15rem;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      flex-wrap: wrap;
+    }
+
+    button,
+    .official-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 9px 13px;
+      border: 1px solid rgba(217, 239, 255, 0.24);
+      border-radius: 12px;
+      color: #d9efff;
+      background: rgba(217, 239, 255, 0.1);
+      font: inherit;
+      font-weight: 850;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    button.primary {
+      color: #071a33;
+      background: #d9efff;
+    }
+
+    button:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .metric {
+      padding: 13px;
+      border-radius: 14px;
+      background: rgba(0, 0, 0, 0.16);
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 1.35rem;
+    }
+
+    a {
+      color: #9fd5ff;
+    }
+
+    @media (max-width: 720px) {
+      .toolbar {
+        grid-template-columns: 1fr;
+        align-items: stretch;
+      }
+
+      .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .image-stage {
+        min-height: 230px;
+      }
+
+      .controls {
+        width: 100%;
+      }
+
+      .controls > * {
+        flex: 1 1 auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <p class="muted">ClimateProyectar · módulo independiente</p>
+    <h1>Radares meteorológicos del SMN</h1>
+
+    <p class="muted">
+      Mosaicos y radares individuales. Las imágenes se cargan desde el
+      servidor oficial del SMN; este repositorio almacena únicamente URLs.
+    </p>
+
+    <section class="toolbar">
+      <label>
+        Seleccionar producto
+        <select id="product-select" aria-label="Seleccionar radar">
+          <option>Cargando catálogo…</option>
+        </select>
+      </label>
+
+      <span id="status-badge" class="badge">Pendiente</span>
+    </section>
+
+    <section class="viewer-card">
+      <div class="image-stage">
+        <img
+          id="radar-image"
+          alt="Imagen de radar meteorológico"
+          referrerpolicy="no-referrer"
+          decoding="async"
+        >
+        <div id="message" class="message">
+          Cargando el catálogo de radares…
+        </div>
+      </div>
+
+      <div class="viewer-footer">
+        <div>
+          <h2 id="product-title" class="product-title">
+            Radar
+          </h2>
+          <div id="frame-time" class="muted"></div>
+          <div id="frame-counter" class="muted"></div>
+        </div>
+
+        <div class="controls">
+          <button id="previous" type="button" aria-label="Cuadro anterior">
+            ← Anterior
+          </button>
+
+          <button id="toggle" class="primary" type="button">
+            Pausar
+          </button>
+
+          <button id="next" type="button" aria-label="Cuadro siguiente">
+            Siguiente →
+          </button>
+
+          <a
+            id="official-link"
+            class="official-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            referrerpolicy="no-referrer"
+            hidden
+          >
+            Abrir imagen oficial
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary-card">
+      <div class="summary-grid">
+        <div class="metric">
+          <strong id="metric-products">—</strong>
+          <span class="muted">productos</span>
+        </div>
+        <div class="metric">
+          <strong id="metric-mosaics">—</strong>
+          <span class="muted">mosaicos</span>
+        </div>
+        <div class="metric">
+          <strong id="metric-radars">—</strong>
+          <span class="muted">radares</span>
+        </div>
+        <div class="metric">
+          <strong id="metric-available">—</strong>
+          <span class="muted">con imágenes</span>
+        </div>
+      </div>
+
+      <p id="catalog-time" class="muted"></p>
+    </section>
+
+    <p class="muted">
+      Fuente:
+      <a
+        href="https://ws2.smn.gob.ar/radar"
+        target="_blank"
+        rel="noopener noreferrer"
+        referrerpolicy="no-referrer"
+      >
+        Servicio Meteorológico Nacional
+      </a>.
+    </p>
+  </main>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const select = document.getElementById("product-select");
+      const image = document.getElementById("radar-image");
+      const message = document.getElementById("message");
+      const title = document.getElementById("product-title");
+      const frameTime = document.getElementById("frame-time");
+      const frameCounter = document.getElementById("frame-counter");
+      const statusBadge = document.getElementById("status-badge");
+      const previousButton = document.getElementById("previous");
+      const toggleButton = document.getElementById("toggle");
+      const nextButton = document.getElementById("next");
+      const officialLink = document.getElementById("official-link");
+
+      const metricProducts = document.getElementById("metric-products");
+      const metricMosaics = document.getElementById("metric-mosaics");
+      const metricRadars = document.getElementById("metric-radars");
+      const metricAvailable = document.getElementById("metric-available");
+      const catalogTime = document.getElementById("catalog-time");
+
+      const dateFormatter = new Intl.DateTimeFormat("es-AR", {
+        dateStyle: "medium",
+        timeStyle: "medium",
+        timeZone: "America/Argentina/Buenos_Aires",
+      });
+
+      let manifest = null;
+      let currentProduct = null;
+      let frames = [];
+      let position = 0;
+      let timer = null;
+      let loadingFrame = false;
+
+      function statusLabel(status) {
+        return {
+          ok: "Actualizado",
+          delayed: "Demorado",
+          stale: "Dato antiguo",
+          no_data: "Sin datos",
+          error: "No disponible",
+          pending: "Pendiente",
+        }[status] || status || "Desconocido";
+      }
+
+      function setStatus(status) {
+        statusBadge.className = `badge ${status || ""}`.trim();
+        statusBadge.textContent = statusLabel(status);
+      }
+
+      function stop() {
+        window.clearInterval(timer);
+        timer = null;
+        toggleButton.textContent = "Reanudar";
+      }
+
+      function start() {
+        if (timer || frames.length < 2) {
+          return;
+        }
+
+        timer = window.setInterval(() => {
+          void showFrame((position + 1) % frames.length);
+        }, 850);
+
+        toggleButton.textContent = "Pausar";
+      }
+
+      function preload(frame) {
+        return new Promise((resolve, reject) => {
+          const probe = new Image();
+          probe.referrerPolicy = "no-referrer";
+          probe.decoding = "async";
+          probe.onload = () => resolve(frame);
+          probe.onerror = () => reject(
+            new Error(`No se pudo abrir ${frame.url}`)
+          );
+          probe.src = frame.url;
+        });
+      }
+
+      async function showFrame(index) {
+        if (!frames.length || loadingFrame) {
+          return;
+        }
+
+        loadingFrame = true;
+        const normalized = (index + frames.length) % frames.length;
+        const frame = frames[normalized];
+
+        officialLink.href = frame.url;
+        officialLink.hidden = false;
+
+        try {
+          await preload(frame);
+
+          image.referrerPolicy = "no-referrer";
+          image.src = frame.url;
+          image.alt = `${currentProduct.name}, ${dateFormatter.format(
+            new Date(frame.timestamp_argentina)
+          )}`;
+
+          position = normalized;
+          message.hidden = true;
+
+          frameTime.textContent =
+            `Cuadro: ${dateFormatter.format(
+              new Date(frame.timestamp_argentina)
+            )}`;
+
+          frameCounter.textContent =
+            `${position + 1} de ${frames.length} cuadros`;
+
+        } catch (error) {
+          console.error(error);
+          message.hidden = false;
+          message.textContent =
+            "El servidor del SMN no permitió cargar este cuadro. " +
+            "Podés abrirlo directamente con el botón oficial.";
+        } finally {
+          loadingFrame = false;
+        }
+      }
+
+      function productDisplayName(product) {
+        return product.province
+          ? `${product.name} (${product.province})`
+          : product.name;
+      }
+
+      function chooseProduct(productId) {
+        stop();
+
+        currentProduct = manifest.products.find(
+          (product) => product.id === productId
+        ) || manifest.products[0];
+
+        if (!currentProduct) {
+          return;
+        }
+
+        select.value = currentProduct.id;
+        title.textContent = productDisplayName(currentProduct);
+        setStatus(currentProduct.status);
+
+        frames = Array.isArray(currentProduct.animation_frames)
+          ? currentProduct.animation_frames
+          : [];
+
+        if (!frames.length && currentProduct.latest) {
+          frames = [currentProduct.latest];
+        }
+
+        previousButton.disabled = frames.length < 2;
+        nextButton.disabled = frames.length < 2;
+        toggleButton.disabled = frames.length < 2;
+
+        if (!frames.length) {
+          image.removeAttribute("src");
+          officialLink.hidden = true;
+          message.hidden = false;
+          message.textContent =
+            currentProduct.last_error ||
+            "Este producto no tiene imágenes disponibles.";
+          frameTime.textContent = "";
+          frameCounter.textContent = "";
+          return;
+        }
+
+        position = Math.max(0, frames.length - 1);
+        void showFrame(position);
+        start();
+
+        const url = new URL(window.location.href);
+        url.searchParams.set("product", currentProduct.id);
+        window.history.replaceState({}, "", url);
+      }
+
+      function populateSelect(products) {
+        select.innerHTML = "";
+
+        const mosaicGroup = document.createElement("optgroup");
+        mosaicGroup.label = "Mosaicos";
+
+        const radarGroup = document.createElement("optgroup");
+        radarGroup.label = "Radares individuales";
+
+        products.forEach((product) => {
+          const option = document.createElement("option");
+          option.value = product.id;
+          option.textContent =
+            `${productDisplayName(product)} · ${statusLabel(product.status)}`;
+
+          if (product.type === "mosaic") {
+            mosaicGroup.appendChild(option);
+          } else {
+            radarGroup.appendChild(option);
+          }
+        });
+
+        select.append(mosaicGroup, radarGroup);
+      }
+
+      select.addEventListener("change", () => {
+        chooseProduct(select.value);
+      });
+
+      previousButton.addEventListener("click", () => {
+        stop();
+        void showFrame(position - 1);
+      });
+
+      nextButton.addEventListener("click", () => {
+        stop();
+        void showFrame(position + 1);
+      });
+
+      toggleButton.addEventListener("click", () => {
+        if (timer) {
+          stop();
+        } else {
+          start();
+        }
+      });
+
+      fetch(`./manifiesto.json?t=${Date.now()}`, {
+        cache: "no-store",
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+          return response.json();
+        })
+        .then((value) => {
+          manifest = value;
+
+          populateSelect(manifest.products || []);
+
+          metricProducts.textContent =
+            manifest.counts?.products ?? "—";
+          metricMosaics.textContent =
+            manifest.counts?.mosaics ?? "—";
+          metricRadars.textContent =
+            manifest.counts?.radars ?? "—";
+          metricAvailable.textContent =
+            manifest.counts?.available ?? "—";
+
+          catalogTime.textContent = manifest.generated_at
+            ? `Catálogo generado: ${dateFormatter.format(
+                new Date(manifest.generated_at)
+              )}`
+            : "El catálogo todavía no fue actualizado.";
+
+          const requestedProduct = new URL(
+            window.location.href
+          ).searchParams.get("product");
+
+          chooseProduct(
+            requestedProduct ||
+            manifest.default_product_id ||
+            "COMP_ARG"
+          );
+        })
+        .catch((error) => {
+          console.error(error);
+          message.hidden = false;
+          message.textContent =
+            "No se pudo cargar el catálogo de radares.";
+          setStatus("error");
+          select.innerHTML = "<option>No disponible</option>";
+          previousButton.disabled = true;
+          nextButton.disabled = true;
+          toggleButton.disabled = true;
+        });
+    })();
+  </script>
+</body>
 </html>

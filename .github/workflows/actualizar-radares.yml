@@ -1,0 +1,82 @@
+name: Actualizar radares SMN
+
+run-name: Radares SMN · disparo externo
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: climate-radar
+  cancel-in-progress: true
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: python -m pip install -r requirements.txt
+
+      - name: Consultar inventarios oficiales
+        run: |
+          python scripts/actualizar_radares_smn.py \
+            --sleep-seconds 0.5 \
+            --http-attempts 4 \
+            --retry-base-seconds 2.0 \
+            --timeout-seconds 35
+
+      - name: Validar publicación
+        run: |
+          python -m json.tool docs/manifiesto.json > /dev/null
+          python -m unittest discover -s tests -v
+
+      - name: Guardar manifiesto
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add docs/manifiesto.json
+
+          if git diff --cached --quiet; then
+            echo "No hay cuadros o estados nuevos para publicar."
+            exit 0
+          fi
+
+          git commit -m "Actualizar catálogo de radares SMN"
+
+          for intento in 1 2 3; do
+            echo "Intento de publicación ${intento}/3"
+            git fetch origin main
+
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "Conflicto al integrar los cambios remotos."
+              exit 1
+            fi
+
+            if git push origin HEAD:main; then
+              echo "Catálogo de radares publicado."
+              exit 0
+            fi
+
+            sleep 5
+          done
+
+          echo "No fue posible publicar después de 3 intentos."
+          exit 1

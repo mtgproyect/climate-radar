@@ -1,1 +1,611 @@
-{"schema_version":1,"generated_at":null,"enabled":false,"status":"not_implemented","source":"radares meteorológicos","files":{}}
+{
+  "schema_version": 1,
+  "generated_at": null,
+  "last_success_at": null,
+  "enabled": true,
+  "status": "pending",
+  "default_product_id": "COMP_ARG",
+  "source": {
+    "name": "Servicio Meteorológico Nacional",
+    "radar_page": "https://ws2.smn.gob.ar/radar",
+    "inventory_base_url": "https://ws1.smn.gob.ar/v1/images/radar/",
+    "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/"
+  },
+  "storage": {
+    "mode": "remote_urls_only",
+    "stored_image_count": 0
+  },
+  "freshness": {
+    "fresh_minutes": 30,
+    "delayed_minutes": 180
+  },
+  "counts": {
+    "products": 24,
+    "mosaics": 3,
+    "radars": 21,
+    "available": 0,
+    "ok": 0,
+    "delayed": 0,
+    "stale": 0,
+    "no_data": 0,
+    "errors": 0
+  },
+  "products": [
+    {
+      "id": "COMP_ARG",
+      "name": "Mosaico Argentina",
+      "type": "mosaic",
+      "province": null,
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/COMP_ARG",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "COMP_CEN",
+      "name": "Mosaico Centro",
+      "type": "mosaic",
+      "province": null,
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/COMP_CEN",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "COMP_NOR",
+      "name": "Mosaico Norte",
+      "type": "mosaic",
+      "province": null,
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/COMP_NOR",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA16_240",
+      "name": "Alejandro Roca",
+      "type": "radar",
+      "province": "Córdoba",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA16_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "ANG_240",
+      "name": "Anguil",
+      "type": "radar",
+      "province": "La Pampa",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/ANG_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA10_240",
+      "name": "Bahía Blanca",
+      "type": "radar",
+      "province": "Buenos Aires",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA10_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA5_240",
+      "name": "Bernardo de Irigoyen",
+      "type": "radar",
+      "province": "Misiones",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA5_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA14_240",
+      "name": "Bolívar",
+      "type": "radar",
+      "province": "Buenos Aires",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA14_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA1_240",
+      "name": "Córdoba",
+      "type": "radar",
+      "province": "Córdoba",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA1_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA2_240",
+      "name": "Ezeiza",
+      "type": "radar",
+      "province": "Buenos Aires",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA2_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA17_240",
+      "name": "Ituzaingó",
+      "type": "radar",
+      "province": "Corrientes",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA17_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA12_240",
+      "name": "Las Grutas",
+      "type": "radar",
+      "province": "Río Negro",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA12_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA3_240",
+      "name": "Las Lomitas",
+      "type": "radar",
+      "province": "Formosa",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA3_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA6_240",
+      "name": "Mar del Plata",
+      "type": "radar",
+      "province": "Buenos Aires",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA6_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA8_240",
+      "name": "Mercedes",
+      "type": "radar",
+      "province": "Corrientes",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA8_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA7_240",
+      "name": "Neuquén",
+      "type": "radar",
+      "province": "Neuquén",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA7_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "PAR_240",
+      "name": "Paraná",
+      "type": "radar",
+      "province": "Entre Ríos",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/PAR_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA15_240",
+      "name": "Patquía",
+      "type": "radar",
+      "province": "La Rioja",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA15_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "PER_240",
+      "name": "Pergamino",
+      "type": "radar",
+      "province": "Buenos Aires",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/PER_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA4_240",
+      "name": "Resistencia",
+      "type": "radar",
+      "province": "Chaco",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA4_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA9_240",
+      "name": "Río Grande",
+      "type": "radar",
+      "province": "Tierra del Fuego",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA9_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA18_240",
+      "name": "Santa Isabel",
+      "type": "radar",
+      "province": "La Pampa",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA18_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA11_240",
+      "name": "Termas de Río Hondo",
+      "type": "radar",
+      "province": "Santiago del Estero",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA11_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    },
+    {
+      "id": "RMA13_240",
+      "name": "Villa Reynolds",
+      "type": "radar",
+      "province": "San Luis",
+      "status": "pending",
+      "age_minutes": null,
+      "updated_at": null,
+      "counts": {
+        "frames": 0,
+        "animation_frames": 0
+      },
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
+      "source": {
+        "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA13_240",
+        "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
+        "api_id": null,
+        "api_product": null,
+        "api_region": null
+      },
+      "last_error": null
+    }
+  ]
+}
