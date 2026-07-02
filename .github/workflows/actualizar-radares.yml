@@ -4,17 +4,9 @@ run-name: Radares SMN · disparo externo
 
 on:
   workflow_dispatch:
-    inputs:
-      force_deploy:
-        description: "Publicar Pages aunque no haya cuadros nuevos"
-        required: false
-        default: false
-        type: boolean
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: climate-radar
@@ -24,9 +16,6 @@ jobs:
   actualizar:
     runs-on: ubuntu-latest
     timeout-minutes: 20
-
-    outputs:
-      deploy_pages: ${{ steps.publicar.outputs.deploy_pages }}
 
     steps:
       - name: Descargar repositorio
@@ -51,13 +40,12 @@ jobs:
             --retry-base-seconds 2.0 \
             --timeout-seconds 35
 
-      - name: Validar publicación
+      - name: Validar datos
         run: |
           python -m json.tool docs/manifiesto.json > /dev/null
           python -m unittest discover -s tests -v
 
       - name: Guardar manifiesto
-        id: publicar
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
@@ -68,20 +56,14 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "No hay cuadros o estados nuevos para guardar."
-
-            if [[ "${{ inputs.force_deploy }}" == "true" ]]; then
-              echo "deploy_pages=true" >> "$GITHUB_OUTPUT"
-            else
-              echo "deploy_pages=false" >> "$GITHUB_OUTPUT"
-            fi
-
             exit 0
           fi
 
           git commit -m "Actualizar catálogo de radares SMN"
 
           for intento in 1 2 3; do
-            echo "Intento de publicación ${intento}/3"
+            echo "Intento de guardado ${intento}/3"
+
             git fetch origin main
 
             if ! git rebase origin/main; then
@@ -91,46 +73,12 @@ jobs:
             fi
 
             if git push origin HEAD:main; then
-              echo "deploy_pages=true" >> "$GITHUB_OUTPUT"
+              echo "Catálogo de radares actualizado correctamente."
               exit 0
             fi
 
             sleep 5
           done
 
-          echo "No fue posible publicar después de 3 intentos."
+          echo "No fue posible guardar los cambios después de 3 intentos."
           exit 1
-
-  publicar_pages:
-    name: Publicar Pages directamente
-    needs: actualizar
-    if: needs.actualizar.outputs.deploy_pages == 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Descargar versión publicada
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Configurar GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: Empaquetar carpeta docs
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: docs
-
-      - name: Desplegar GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
