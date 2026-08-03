@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-02T21:18:31-03:00",
+  "generated_at": "2026-08-02T21:33:32-03:00",
   "last_success_at": null,
   "enabled": true,
   "status": "partial",
@@ -23,11 +23,11 @@
     "products": 25,
     "mosaics": 3,
     "radars": 22,
-    "available": 24,
-    "ok": 21,
+    "available": 23,
+    "ok": 20,
     "delayed": 3,
     "stale": 0,
-    "no_data": 1,
+    "no_data": 2,
     "errors": 0
   },
   "products": [
@@ -37,31 +37,19 @@
       "type": "mosaic",
       "province": null,
       "status": "delayed",
-      "age_minutes": 38,
-      "updated_at": "2026-08-02T20:40:00-03:00",
+      "age_minutes": 33,
+      "updated_at": "2026-08-02T21:00:00-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "COMP_ARG_ZH_CMAX_20260802_234000Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_ARG_ZH_CMAX_20260802_234000Z.png",
-        "timestamp_utc": "2026-08-02T23:40:00Z",
-        "timestamp_argentina": "2026-08-02T20:40:00-03:00"
+        "filename": "COMP_ARG_ZH_CMAX_20260803_000000Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_ARG_ZH_CMAX_20260803_000000Z.png",
+        "timestamp_utc": "2026-08-03T00:00:00Z",
+        "timestamp_argentina": "2026-08-02T21:00:00-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "COMP_ARG_ZH_CMAX_20260802_215000Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_ARG_ZH_CMAX_20260802_215000Z.png",
-          "timestamp_utc": "2026-08-02T21:50:00Z",
-          "timestamp_argentina": "2026-08-02T18:50:00-03:00"
-        },
-        {
-          "filename": "COMP_ARG_ZH_CMAX_20260802_220000Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_ARG_ZH_CMAX_20260802_220000Z.png",
-          "timestamp_utc": "2026-08-02T22:00:00Z",
-          "timestamp_argentina": "2026-08-02T19:00:00-03:00"
-        },
         {
           "filename": "COMP_ARG_ZH_CMAX_20260802_221000Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_ARG_ZH_CMAX_20260802_221000Z.png",
@@ -121,22 +109,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_ARG_ZH_CMAX_20260802_234000Z.png",
           "timestamp_utc": "2026-08-02T23:40:00Z",
           "timestamp_argentina": "2026-08-02T20:40:00-03:00"
+        },
+        {
+          "filename": "COMP_ARG_ZH_CMAX_20260802_235000Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_ARG_ZH_CMAX_20260802_235000Z.png",
+          "timestamp_utc": "2026-08-02T23:50:00Z",
+          "timestamp_argentina": "2026-08-02T20:50:00-03:00"
+        },
+        {
+          "filename": "COMP_ARG_ZH_CMAX_20260803_000000Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_ARG_ZH_CMAX_20260803_000000Z.png",
+          "timestamp_utc": "2026-08-03T00:00:00Z",
+          "timestamp_argentina": "2026-08-02T21:00:00-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "COMP_ARG_ZH_CMAX_20260802_215000Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_ARG_ZH_CMAX_20260802_215000Z.png",
-          "timestamp_utc": "2026-08-02T21:50:00Z",
-          "timestamp_argentina": "2026-08-02T18:50:00-03:00"
-        },
-        {
-          "filename": "COMP_ARG_ZH_CMAX_20260802_220000Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_ARG_ZH_CMAX_20260802_220000Z.png",
-          "timestamp_utc": "2026-08-02T22:00:00Z",
-          "timestamp_argentina": "2026-08-02T19:00:00-03:00"
-        },
-        {
           "filename": "COMP_ARG_ZH_CMAX_20260802_221000Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_ARG_ZH_CMAX_20260802_221000Z.png",
           "timestamp_utc": "2026-08-02T22:10:00Z",
@@ -195,6 +183,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_ARG_ZH_CMAX_20260802_234000Z.png",
           "timestamp_utc": "2026-08-02T23:40:00Z",
           "timestamp_argentina": "2026-08-02T20:40:00-03:00"
+        },
+        {
+          "filename": "COMP_ARG_ZH_CMAX_20260802_235000Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_ARG_ZH_CMAX_20260802_235000Z.png",
+          "timestamp_utc": "2026-08-02T23:50:00Z",
+          "timestamp_argentina": "2026-08-02T20:50:00-03:00"
+        },
+        {
+          "filename": "COMP_ARG_ZH_CMAX_20260803_000000Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_ARG_ZH_CMAX_20260803_000000Z.png",
+          "timestamp_utc": "2026-08-03T00:00:00Z",
+          "timestamp_argentina": "2026-08-02T21:00:00-03:00"
         }
       ],
       "source": {
@@ -212,31 +212,19 @@
       "type": "mosaic",
       "province": null,
       "status": "delayed",
-      "age_minutes": 38,
-      "updated_at": "2026-08-02T20:40:00-03:00",
+      "age_minutes": 33,
+      "updated_at": "2026-08-02T21:00:00-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "COMP_CEN_ZH_CMAX_20260802_234000Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_CEN_ZH_CMAX_20260802_234000Z.png",
-        "timestamp_utc": "2026-08-02T23:40:00Z",
-        "timestamp_argentina": "2026-08-02T20:40:00-03:00"
+        "filename": "COMP_CEN_ZH_CMAX_20260803_000000Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_CEN_ZH_CMAX_20260803_000000Z.png",
+        "timestamp_utc": "2026-08-03T00:00:00Z",
+        "timestamp_argentina": "2026-08-02T21:00:00-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "COMP_CEN_ZH_CMAX_20260802_215000Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_CEN_ZH_CMAX_20260802_215000Z.png",
-          "timestamp_utc": "2026-08-02T21:50:00Z",
-          "timestamp_argentina": "2026-08-02T18:50:00-03:00"
-        },
-        {
-          "filename": "COMP_CEN_ZH_CMAX_20260802_220000Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_CEN_ZH_CMAX_20260802_220000Z.png",
-          "timestamp_utc": "2026-08-02T22:00:00Z",
-          "timestamp_argentina": "2026-08-02T19:00:00-03:00"
-        },
         {
           "filename": "COMP_CEN_ZH_CMAX_20260802_221000Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_CEN_ZH_CMAX_20260802_221000Z.png",
@@ -296,22 +284,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_CEN_ZH_CMAX_20260802_234000Z.png",
           "timestamp_utc": "2026-08-02T23:40:00Z",
           "timestamp_argentina": "2026-08-02T20:40:00-03:00"
+        },
+        {
+          "filename": "COMP_CEN_ZH_CMAX_20260802_235000Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_CEN_ZH_CMAX_20260802_235000Z.png",
+          "timestamp_utc": "2026-08-02T23:50:00Z",
+          "timestamp_argentina": "2026-08-02T20:50:00-03:00"
+        },
+        {
+          "filename": "COMP_CEN_ZH_CMAX_20260803_000000Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_CEN_ZH_CMAX_20260803_000000Z.png",
+          "timestamp_utc": "2026-08-03T00:00:00Z",
+          "timestamp_argentina": "2026-08-02T21:00:00-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "COMP_CEN_ZH_CMAX_20260802_215000Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_CEN_ZH_CMAX_20260802_215000Z.png",
-          "timestamp_utc": "2026-08-02T21:50:00Z",
-          "timestamp_argentina": "2026-08-02T18:50:00-03:00"
-        },
-        {
-          "filename": "COMP_CEN_ZH_CMAX_20260802_220000Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_CEN_ZH_CMAX_20260802_220000Z.png",
-          "timestamp_utc": "2026-08-02T22:00:00Z",
-          "timestamp_argentina": "2026-08-02T19:00:00-03:00"
-        },
-        {
           "filename": "COMP_CEN_ZH_CMAX_20260802_221000Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_CEN_ZH_CMAX_20260802_221000Z.png",
           "timestamp_utc": "2026-08-02T22:10:00Z",
@@ -370,6 +358,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_CEN_ZH_CMAX_20260802_234000Z.png",
           "timestamp_utc": "2026-08-02T23:40:00Z",
           "timestamp_argentina": "2026-08-02T20:40:00-03:00"
+        },
+        {
+          "filename": "COMP_CEN_ZH_CMAX_20260802_235000Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_CEN_ZH_CMAX_20260802_235000Z.png",
+          "timestamp_utc": "2026-08-02T23:50:00Z",
+          "timestamp_argentina": "2026-08-02T20:50:00-03:00"
+        },
+        {
+          "filename": "COMP_CEN_ZH_CMAX_20260803_000000Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_CEN_ZH_CMAX_20260803_000000Z.png",
+          "timestamp_utc": "2026-08-03T00:00:00Z",
+          "timestamp_argentina": "2026-08-02T21:00:00-03:00"
         }
       ],
       "source": {
@@ -387,31 +387,19 @@
       "type": "mosaic",
       "province": null,
       "status": "delayed",
-      "age_minutes": 38,
-      "updated_at": "2026-08-02T20:40:00-03:00",
+      "age_minutes": 33,
+      "updated_at": "2026-08-02T21:00:00-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "COMP_NOR_ZH_CMAX_20260802_234000Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_NOR_ZH_CMAX_20260802_234000Z.png",
-        "timestamp_utc": "2026-08-02T23:40:00Z",
-        "timestamp_argentina": "2026-08-02T20:40:00-03:00"
+        "filename": "COMP_NOR_ZH_CMAX_20260803_000000Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_NOR_ZH_CMAX_20260803_000000Z.png",
+        "timestamp_utc": "2026-08-03T00:00:00Z",
+        "timestamp_argentina": "2026-08-02T21:00:00-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "COMP_NOR_ZH_CMAX_20260802_215000Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_NOR_ZH_CMAX_20260802_215000Z.png",
-          "timestamp_utc": "2026-08-02T21:50:00Z",
-          "timestamp_argentina": "2026-08-02T18:50:00-03:00"
-        },
-        {
-          "filename": "COMP_NOR_ZH_CMAX_20260802_220000Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_NOR_ZH_CMAX_20260802_220000Z.png",
-          "timestamp_utc": "2026-08-02T22:00:00Z",
-          "timestamp_argentina": "2026-08-02T19:00:00-03:00"
-        },
         {
           "filename": "COMP_NOR_ZH_CMAX_20260802_221000Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_NOR_ZH_CMAX_20260802_221000Z.png",
@@ -471,22 +459,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_NOR_ZH_CMAX_20260802_234000Z.png",
           "timestamp_utc": "2026-08-02T23:40:00Z",
           "timestamp_argentina": "2026-08-02T20:40:00-03:00"
+        },
+        {
+          "filename": "COMP_NOR_ZH_CMAX_20260802_235000Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_NOR_ZH_CMAX_20260802_235000Z.png",
+          "timestamp_utc": "2026-08-02T23:50:00Z",
+          "timestamp_argentina": "2026-08-02T20:50:00-03:00"
+        },
+        {
+          "filename": "COMP_NOR_ZH_CMAX_20260803_000000Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_NOR_ZH_CMAX_20260803_000000Z.png",
+          "timestamp_utc": "2026-08-03T00:00:00Z",
+          "timestamp_argentina": "2026-08-02T21:00:00-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "COMP_NOR_ZH_CMAX_20260802_215000Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_NOR_ZH_CMAX_20260802_215000Z.png",
-          "timestamp_utc": "2026-08-02T21:50:00Z",
-          "timestamp_argentina": "2026-08-02T18:50:00-03:00"
-        },
-        {
-          "filename": "COMP_NOR_ZH_CMAX_20260802_220000Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_NOR_ZH_CMAX_20260802_220000Z.png",
-          "timestamp_utc": "2026-08-02T22:00:00Z",
-          "timestamp_argentina": "2026-08-02T19:00:00-03:00"
-        },
-        {
           "filename": "COMP_NOR_ZH_CMAX_20260802_221000Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_NOR_ZH_CMAX_20260802_221000Z.png",
           "timestamp_utc": "2026-08-02T22:10:00Z",
@@ -545,6 +533,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_NOR_ZH_CMAX_20260802_234000Z.png",
           "timestamp_utc": "2026-08-02T23:40:00Z",
           "timestamp_argentina": "2026-08-02T20:40:00-03:00"
+        },
+        {
+          "filename": "COMP_NOR_ZH_CMAX_20260802_235000Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_NOR_ZH_CMAX_20260802_235000Z.png",
+          "timestamp_utc": "2026-08-02T23:50:00Z",
+          "timestamp_argentina": "2026-08-02T20:50:00-03:00"
+        },
+        {
+          "filename": "COMP_NOR_ZH_CMAX_20260803_000000Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/COMP_NOR_ZH_CMAX_20260803_000000Z.png",
+          "timestamp_utc": "2026-08-03T00:00:00Z",
+          "timestamp_argentina": "2026-08-02T21:00:00-03:00"
         }
       ],
       "source": {
@@ -562,31 +562,19 @@
       "type": "radar",
       "province": "Córdoba",
       "status": "ok",
-      "age_minutes": 9,
-      "updated_at": "2026-08-02T21:09:07-03:00",
+      "age_minutes": 7,
+      "updated_at": "2026-08-02T21:25:27-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA16_240_ZH_CMAX_20260803_000907Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA16_240_ZH_CMAX_20260803_000907Z.png",
-        "timestamp_utc": "2026-08-03T00:09:07Z",
-        "timestamp_argentina": "2026-08-02T21:09:07-03:00"
+        "filename": "RMA16_240_ZH_CMAX_20260803_002527Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA16_240_ZH_CMAX_20260803_002527Z.png",
+        "timestamp_utc": "2026-08-03T00:25:27Z",
+        "timestamp_argentina": "2026-08-02T21:25:27-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA16_240_ZH_CMAX_20260802_223057Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA16_240_ZH_CMAX_20260802_223057Z.png",
-          "timestamp_utc": "2026-08-02T22:30:57Z",
-          "timestamp_argentina": "2026-08-02T19:30:57-03:00"
-        },
-        {
-          "filename": "RMA16_240_ZH_CMAX_20260802_223910Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA16_240_ZH_CMAX_20260802_223910Z.png",
-          "timestamp_utc": "2026-08-02T22:39:10Z",
-          "timestamp_argentina": "2026-08-02T19:39:10-03:00"
-        },
         {
           "filename": "RMA16_240_ZH_CMAX_20260802_224720Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA16_240_ZH_CMAX_20260802_224720Z.png",
@@ -646,22 +634,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA16_240_ZH_CMAX_20260803_000907Z.png",
           "timestamp_utc": "2026-08-03T00:09:07Z",
           "timestamp_argentina": "2026-08-02T21:09:07-03:00"
+        },
+        {
+          "filename": "RMA16_240_ZH_CMAX_20260803_001718Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA16_240_ZH_CMAX_20260803_001718Z.png",
+          "timestamp_utc": "2026-08-03T00:17:18Z",
+          "timestamp_argentina": "2026-08-02T21:17:18-03:00"
+        },
+        {
+          "filename": "RMA16_240_ZH_CMAX_20260803_002527Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA16_240_ZH_CMAX_20260803_002527Z.png",
+          "timestamp_utc": "2026-08-03T00:25:27Z",
+          "timestamp_argentina": "2026-08-02T21:25:27-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA16_240_ZH_CMAX_20260802_223057Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA16_240_ZH_CMAX_20260802_223057Z.png",
-          "timestamp_utc": "2026-08-02T22:30:57Z",
-          "timestamp_argentina": "2026-08-02T19:30:57-03:00"
-        },
-        {
-          "filename": "RMA16_240_ZH_CMAX_20260802_223910Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA16_240_ZH_CMAX_20260802_223910Z.png",
-          "timestamp_utc": "2026-08-02T22:39:10Z",
-          "timestamp_argentina": "2026-08-02T19:39:10-03:00"
-        },
-        {
           "filename": "RMA16_240_ZH_CMAX_20260802_224720Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA16_240_ZH_CMAX_20260802_224720Z.png",
           "timestamp_utc": "2026-08-02T22:47:20Z",
@@ -720,6 +708,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA16_240_ZH_CMAX_20260803_000907Z.png",
           "timestamp_utc": "2026-08-03T00:09:07Z",
           "timestamp_argentina": "2026-08-02T21:09:07-03:00"
+        },
+        {
+          "filename": "RMA16_240_ZH_CMAX_20260803_001718Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA16_240_ZH_CMAX_20260803_001718Z.png",
+          "timestamp_utc": "2026-08-03T00:17:18Z",
+          "timestamp_argentina": "2026-08-02T21:17:18-03:00"
+        },
+        {
+          "filename": "RMA16_240_ZH_CMAX_20260803_002527Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA16_240_ZH_CMAX_20260803_002527Z.png",
+          "timestamp_utc": "2026-08-03T00:25:27Z",
+          "timestamp_argentina": "2026-08-02T21:25:27-03:00"
         }
       ],
       "source": {
@@ -737,17 +737,17 @@
       "type": "radar",
       "province": "La Pampa",
       "status": "ok",
-      "age_minutes": 8,
-      "updated_at": "2026-08-02T21:10:03-03:00",
+      "age_minutes": 13,
+      "updated_at": "2026-08-02T21:20:03-03:00",
       "counts": {
-        "frames": 10,
-        "animation_frames": 10
+        "frames": 11,
+        "animation_frames": 11
       },
       "latest": {
-        "filename": "ANG_240_ZH_CMAX_20260803_001003Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/ANG_240_ZH_CMAX_20260803_001003Z.png",
-        "timestamp_utc": "2026-08-03T00:10:03Z",
-        "timestamp_argentina": "2026-08-02T21:10:03-03:00"
+        "filename": "ANG_240_ZH_CMAX_20260803_002003Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/ANG_240_ZH_CMAX_20260803_002003Z.png",
+        "timestamp_utc": "2026-08-03T00:20:03Z",
+        "timestamp_argentina": "2026-08-02T21:20:03-03:00"
       },
       "animation_frames": [
         {
@@ -809,6 +809,12 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/ANG_240_ZH_CMAX_20260803_001003Z.png",
           "timestamp_utc": "2026-08-03T00:10:03Z",
           "timestamp_argentina": "2026-08-02T21:10:03-03:00"
+        },
+        {
+          "filename": "ANG_240_ZH_CMAX_20260803_002003Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/ANG_240_ZH_CMAX_20260803_002003Z.png",
+          "timestamp_utc": "2026-08-03T00:20:03Z",
+          "timestamp_argentina": "2026-08-02T21:20:03-03:00"
         }
       ],
       "frames": [
@@ -871,6 +877,12 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/ANG_240_ZH_CMAX_20260803_001003Z.png",
           "timestamp_utc": "2026-08-03T00:10:03Z",
           "timestamp_argentina": "2026-08-02T21:10:03-03:00"
+        },
+        {
+          "filename": "ANG_240_ZH_CMAX_20260803_002003Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/ANG_240_ZH_CMAX_20260803_002003Z.png",
+          "timestamp_utc": "2026-08-03T00:20:03Z",
+          "timestamp_argentina": "2026-08-02T21:20:03-03:00"
         }
       ],
       "source": {
@@ -888,31 +900,19 @@
       "type": "radar",
       "province": "Buenos Aires",
       "status": "ok",
-      "age_minutes": 15,
-      "updated_at": "2026-08-02T21:02:25-03:00",
+      "age_minutes": 12,
+      "updated_at": "2026-08-02T21:20:28-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA10_240_ZH_CMAX_20260803_000225Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA10_240_ZH_CMAX_20260803_000225Z.png",
-        "timestamp_utc": "2026-08-03T00:02:25Z",
-        "timestamp_argentina": "2026-08-02T21:02:25-03:00"
+        "filename": "RMA10_240_ZH_CMAX_20260803_002028Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA10_240_ZH_CMAX_20260803_002028Z.png",
+        "timestamp_utc": "2026-08-03T00:20:28Z",
+        "timestamp_argentina": "2026-08-02T21:20:28-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA10_240_ZH_CMAX_20260802_222304Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA10_240_ZH_CMAX_20260802_222304Z.png",
-          "timestamp_utc": "2026-08-02T22:23:04Z",
-          "timestamp_argentina": "2026-08-02T19:23:04-03:00"
-        },
-        {
-          "filename": "RMA10_240_ZH_CMAX_20260802_223206Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA10_240_ZH_CMAX_20260802_223206Z.png",
-          "timestamp_utc": "2026-08-02T22:32:06Z",
-          "timestamp_argentina": "2026-08-02T19:32:06-03:00"
-        },
         {
           "filename": "RMA10_240_ZH_CMAX_20260802_224109Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA10_240_ZH_CMAX_20260802_224109Z.png",
@@ -972,22 +972,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA10_240_ZH_CMAX_20260803_000225Z.png",
           "timestamp_utc": "2026-08-03T00:02:25Z",
           "timestamp_argentina": "2026-08-02T21:02:25-03:00"
+        },
+        {
+          "filename": "RMA10_240_ZH_CMAX_20260803_001128Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA10_240_ZH_CMAX_20260803_001128Z.png",
+          "timestamp_utc": "2026-08-03T00:11:28Z",
+          "timestamp_argentina": "2026-08-02T21:11:28-03:00"
+        },
+        {
+          "filename": "RMA10_240_ZH_CMAX_20260803_002028Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA10_240_ZH_CMAX_20260803_002028Z.png",
+          "timestamp_utc": "2026-08-03T00:20:28Z",
+          "timestamp_argentina": "2026-08-02T21:20:28-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA10_240_ZH_CMAX_20260802_222304Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA10_240_ZH_CMAX_20260802_222304Z.png",
-          "timestamp_utc": "2026-08-02T22:23:04Z",
-          "timestamp_argentina": "2026-08-02T19:23:04-03:00"
-        },
-        {
-          "filename": "RMA10_240_ZH_CMAX_20260802_223206Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA10_240_ZH_CMAX_20260802_223206Z.png",
-          "timestamp_utc": "2026-08-02T22:32:06Z",
-          "timestamp_argentina": "2026-08-02T19:32:06-03:00"
-        },
-        {
           "filename": "RMA10_240_ZH_CMAX_20260802_224109Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA10_240_ZH_CMAX_20260802_224109Z.png",
           "timestamp_utc": "2026-08-02T22:41:09Z",
@@ -1046,6 +1046,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA10_240_ZH_CMAX_20260803_000225Z.png",
           "timestamp_utc": "2026-08-03T00:02:25Z",
           "timestamp_argentina": "2026-08-02T21:02:25-03:00"
+        },
+        {
+          "filename": "RMA10_240_ZH_CMAX_20260803_001128Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA10_240_ZH_CMAX_20260803_001128Z.png",
+          "timestamp_utc": "2026-08-03T00:11:28Z",
+          "timestamp_argentina": "2026-08-02T21:11:28-03:00"
+        },
+        {
+          "filename": "RMA10_240_ZH_CMAX_20260803_002028Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA10_240_ZH_CMAX_20260803_002028Z.png",
+          "timestamp_utc": "2026-08-03T00:20:28Z",
+          "timestamp_argentina": "2026-08-02T21:20:28-03:00"
         }
       ],
       "source": {
@@ -1063,31 +1075,19 @@
       "type": "radar",
       "province": "Misiones",
       "status": "ok",
-      "age_minutes": 14,
-      "updated_at": "2026-08-02T21:04:06-03:00",
+      "age_minutes": 11,
+      "updated_at": "2026-08-02T21:22:06-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA5_240_ZH_CMAX_20260803_000406Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA5_240_ZH_CMAX_20260803_000406Z.png",
-        "timestamp_utc": "2026-08-03T00:04:06Z",
-        "timestamp_argentina": "2026-08-02T21:04:06-03:00"
+        "filename": "RMA5_240_ZH_CMAX_20260803_002206Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA5_240_ZH_CMAX_20260803_002206Z.png",
+        "timestamp_utc": "2026-08-03T00:22:06Z",
+        "timestamp_argentina": "2026-08-02T21:22:06-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA5_240_ZH_CMAX_20260802_221600Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA5_240_ZH_CMAX_20260802_221600Z.png",
-          "timestamp_utc": "2026-08-02T22:16:00Z",
-          "timestamp_argentina": "2026-08-02T19:16:00-03:00"
-        },
-        {
-          "filename": "RMA5_240_ZH_CMAX_20260802_222500Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA5_240_ZH_CMAX_20260802_222500Z.png",
-          "timestamp_utc": "2026-08-02T22:25:00Z",
-          "timestamp_argentina": "2026-08-02T19:25:00-03:00"
-        },
         {
           "filename": "RMA5_240_ZH_CMAX_20260802_223401Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA5_240_ZH_CMAX_20260802_223401Z.png",
@@ -1147,22 +1147,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA5_240_ZH_CMAX_20260803_000406Z.png",
           "timestamp_utc": "2026-08-03T00:04:06Z",
           "timestamp_argentina": "2026-08-02T21:04:06-03:00"
+        },
+        {
+          "filename": "RMA5_240_ZH_CMAX_20260803_001306Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA5_240_ZH_CMAX_20260803_001306Z.png",
+          "timestamp_utc": "2026-08-03T00:13:06Z",
+          "timestamp_argentina": "2026-08-02T21:13:06-03:00"
+        },
+        {
+          "filename": "RMA5_240_ZH_CMAX_20260803_002206Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA5_240_ZH_CMAX_20260803_002206Z.png",
+          "timestamp_utc": "2026-08-03T00:22:06Z",
+          "timestamp_argentina": "2026-08-02T21:22:06-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA5_240_ZH_CMAX_20260802_221600Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA5_240_ZH_CMAX_20260802_221600Z.png",
-          "timestamp_utc": "2026-08-02T22:16:00Z",
-          "timestamp_argentina": "2026-08-02T19:16:00-03:00"
-        },
-        {
-          "filename": "RMA5_240_ZH_CMAX_20260802_222500Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA5_240_ZH_CMAX_20260802_222500Z.png",
-          "timestamp_utc": "2026-08-02T22:25:00Z",
-          "timestamp_argentina": "2026-08-02T19:25:00-03:00"
-        },
-        {
           "filename": "RMA5_240_ZH_CMAX_20260802_223401Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA5_240_ZH_CMAX_20260802_223401Z.png",
           "timestamp_utc": "2026-08-02T22:34:01Z",
@@ -1221,6 +1221,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA5_240_ZH_CMAX_20260803_000406Z.png",
           "timestamp_utc": "2026-08-03T00:04:06Z",
           "timestamp_argentina": "2026-08-02T21:04:06-03:00"
+        },
+        {
+          "filename": "RMA5_240_ZH_CMAX_20260803_001306Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA5_240_ZH_CMAX_20260803_001306Z.png",
+          "timestamp_utc": "2026-08-03T00:13:06Z",
+          "timestamp_argentina": "2026-08-02T21:13:06-03:00"
+        },
+        {
+          "filename": "RMA5_240_ZH_CMAX_20260803_002206Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA5_240_ZH_CMAX_20260803_002206Z.png",
+          "timestamp_utc": "2026-08-03T00:22:06Z",
+          "timestamp_argentina": "2026-08-02T21:22:06-03:00"
         }
       ],
       "source": {
@@ -1238,31 +1250,19 @@
       "type": "radar",
       "province": "Buenos Aires",
       "status": "ok",
-      "age_minutes": 12,
-      "updated_at": "2026-08-02T21:05:34-03:00",
+      "age_minutes": 10,
+      "updated_at": "2026-08-02T21:22:22-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA14_240_ZH_CMAX_20260803_000534Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA14_240_ZH_CMAX_20260803_000534Z.png",
-        "timestamp_utc": "2026-08-03T00:05:34Z",
-        "timestamp_argentina": "2026-08-02T21:05:34-03:00"
+        "filename": "RMA14_240_ZH_CMAX_20260803_002222Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA14_240_ZH_CMAX_20260803_002222Z.png",
+        "timestamp_utc": "2026-08-03T00:22:22Z",
+        "timestamp_argentina": "2026-08-02T21:22:22-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA14_240_ZH_CMAX_20260802_223324Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA14_240_ZH_CMAX_20260802_223324Z.png",
-          "timestamp_utc": "2026-08-02T22:33:24Z",
-          "timestamp_argentina": "2026-08-02T19:33:24-03:00"
-        },
-        {
-          "filename": "RMA14_240_ZH_CMAX_20260802_224146Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA14_240_ZH_CMAX_20260802_224146Z.png",
-          "timestamp_utc": "2026-08-02T22:41:46Z",
-          "timestamp_argentina": "2026-08-02T19:41:46-03:00"
-        },
         {
           "filename": "RMA14_240_ZH_CMAX_20260802_225010Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA14_240_ZH_CMAX_20260802_225010Z.png",
@@ -1322,22 +1322,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA14_240_ZH_CMAX_20260803_000534Z.png",
           "timestamp_utc": "2026-08-03T00:05:34Z",
           "timestamp_argentina": "2026-08-02T21:05:34-03:00"
+        },
+        {
+          "filename": "RMA14_240_ZH_CMAX_20260803_001357Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA14_240_ZH_CMAX_20260803_001357Z.png",
+          "timestamp_utc": "2026-08-03T00:13:57Z",
+          "timestamp_argentina": "2026-08-02T21:13:57-03:00"
+        },
+        {
+          "filename": "RMA14_240_ZH_CMAX_20260803_002222Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA14_240_ZH_CMAX_20260803_002222Z.png",
+          "timestamp_utc": "2026-08-03T00:22:22Z",
+          "timestamp_argentina": "2026-08-02T21:22:22-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA14_240_ZH_CMAX_20260802_223324Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA14_240_ZH_CMAX_20260802_223324Z.png",
-          "timestamp_utc": "2026-08-02T22:33:24Z",
-          "timestamp_argentina": "2026-08-02T19:33:24-03:00"
-        },
-        {
-          "filename": "RMA14_240_ZH_CMAX_20260802_224146Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA14_240_ZH_CMAX_20260802_224146Z.png",
-          "timestamp_utc": "2026-08-02T22:41:46Z",
-          "timestamp_argentina": "2026-08-02T19:41:46-03:00"
-        },
-        {
           "filename": "RMA14_240_ZH_CMAX_20260802_225010Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA14_240_ZH_CMAX_20260802_225010Z.png",
           "timestamp_utc": "2026-08-02T22:50:10Z",
@@ -1396,6 +1396,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA14_240_ZH_CMAX_20260803_000534Z.png",
           "timestamp_utc": "2026-08-03T00:05:34Z",
           "timestamp_argentina": "2026-08-02T21:05:34-03:00"
+        },
+        {
+          "filename": "RMA14_240_ZH_CMAX_20260803_001357Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA14_240_ZH_CMAX_20260803_001357Z.png",
+          "timestamp_utc": "2026-08-03T00:13:57Z",
+          "timestamp_argentina": "2026-08-02T21:13:57-03:00"
+        },
+        {
+          "filename": "RMA14_240_ZH_CMAX_20260803_002222Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA14_240_ZH_CMAX_20260803_002222Z.png",
+          "timestamp_utc": "2026-08-03T00:22:22Z",
+          "timestamp_argentina": "2026-08-02T21:22:22-03:00"
         }
       ],
       "source": {
@@ -1413,31 +1425,19 @@
       "type": "radar",
       "province": "Córdoba",
       "status": "ok",
-      "age_minutes": 13,
-      "updated_at": "2026-08-02T21:05:14-03:00",
+      "age_minutes": 10,
+      "updated_at": "2026-08-02T21:23:14-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA1_240_ZH_CMAX_20260803_000514Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA1_240_ZH_CMAX_20260803_000514Z.png",
-        "timestamp_utc": "2026-08-03T00:05:14Z",
-        "timestamp_argentina": "2026-08-02T21:05:14-03:00"
+        "filename": "RMA1_240_ZH_CMAX_20260803_002314Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA1_240_ZH_CMAX_20260803_002314Z.png",
+        "timestamp_utc": "2026-08-03T00:23:14Z",
+        "timestamp_argentina": "2026-08-02T21:23:14-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA1_240_ZH_CMAX_20260802_222707Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA1_240_ZH_CMAX_20260802_222707Z.png",
-          "timestamp_utc": "2026-08-02T22:27:07Z",
-          "timestamp_argentina": "2026-08-02T19:27:07-03:00"
-        },
-        {
-          "filename": "RMA1_240_ZH_CMAX_20260802_223604Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA1_240_ZH_CMAX_20260802_223604Z.png",
-          "timestamp_utc": "2026-08-02T22:36:04Z",
-          "timestamp_argentina": "2026-08-02T19:36:04-03:00"
-        },
         {
           "filename": "RMA1_240_ZH_CMAX_20260802_224502Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA1_240_ZH_CMAX_20260802_224502Z.png",
@@ -1497,22 +1497,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA1_240_ZH_CMAX_20260803_000514Z.png",
           "timestamp_utc": "2026-08-03T00:05:14Z",
           "timestamp_argentina": "2026-08-02T21:05:14-03:00"
+        },
+        {
+          "filename": "RMA1_240_ZH_CMAX_20260803_001414Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA1_240_ZH_CMAX_20260803_001414Z.png",
+          "timestamp_utc": "2026-08-03T00:14:14Z",
+          "timestamp_argentina": "2026-08-02T21:14:14-03:00"
+        },
+        {
+          "filename": "RMA1_240_ZH_CMAX_20260803_002314Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA1_240_ZH_CMAX_20260803_002314Z.png",
+          "timestamp_utc": "2026-08-03T00:23:14Z",
+          "timestamp_argentina": "2026-08-02T21:23:14-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA1_240_ZH_CMAX_20260802_222707Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA1_240_ZH_CMAX_20260802_222707Z.png",
-          "timestamp_utc": "2026-08-02T22:27:07Z",
-          "timestamp_argentina": "2026-08-02T19:27:07-03:00"
-        },
-        {
-          "filename": "RMA1_240_ZH_CMAX_20260802_223604Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA1_240_ZH_CMAX_20260802_223604Z.png",
-          "timestamp_utc": "2026-08-02T22:36:04Z",
-          "timestamp_argentina": "2026-08-02T19:36:04-03:00"
-        },
-        {
           "filename": "RMA1_240_ZH_CMAX_20260802_224502Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA1_240_ZH_CMAX_20260802_224502Z.png",
           "timestamp_utc": "2026-08-02T22:45:02Z",
@@ -1571,6 +1571,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA1_240_ZH_CMAX_20260803_000514Z.png",
           "timestamp_utc": "2026-08-03T00:05:14Z",
           "timestamp_argentina": "2026-08-02T21:05:14-03:00"
+        },
+        {
+          "filename": "RMA1_240_ZH_CMAX_20260803_001414Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA1_240_ZH_CMAX_20260803_001414Z.png",
+          "timestamp_utc": "2026-08-03T00:14:14Z",
+          "timestamp_argentina": "2026-08-02T21:14:14-03:00"
+        },
+        {
+          "filename": "RMA1_240_ZH_CMAX_20260803_002314Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA1_240_ZH_CMAX_20260803_002314Z.png",
+          "timestamp_utc": "2026-08-03T00:23:14Z",
+          "timestamp_argentina": "2026-08-02T21:23:14-03:00"
         }
       ],
       "source": {
@@ -1588,31 +1600,19 @@
       "type": "radar",
       "province": "Buenos Aires",
       "status": "ok",
-      "age_minutes": 15,
-      "updated_at": "2026-08-02T21:02:27-03:00",
+      "age_minutes": 12,
+      "updated_at": "2026-08-02T21:20:47-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA2_240_ZH_CMAX_20260803_000227Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA2_240_ZH_CMAX_20260803_000227Z.png",
-        "timestamp_utc": "2026-08-03T00:02:27Z",
-        "timestamp_argentina": "2026-08-02T21:02:27-03:00"
+        "filename": "RMA2_240_ZH_CMAX_20260803_002047Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA2_240_ZH_CMAX_20260803_002047Z.png",
+        "timestamp_utc": "2026-08-03T00:20:47Z",
+        "timestamp_argentina": "2026-08-02T21:20:47-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA2_240_ZH_CMAX_20260802_222137Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA2_240_ZH_CMAX_20260802_222137Z.png",
-          "timestamp_utc": "2026-08-02T22:21:37Z",
-          "timestamp_argentina": "2026-08-02T19:21:37-03:00"
-        },
-        {
-          "filename": "RMA2_240_ZH_CMAX_20260802_223048Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA2_240_ZH_CMAX_20260802_223048Z.png",
-          "timestamp_utc": "2026-08-02T22:30:48Z",
-          "timestamp_argentina": "2026-08-02T19:30:48-03:00"
-        },
         {
           "filename": "RMA2_240_ZH_CMAX_20260802_223958Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA2_240_ZH_CMAX_20260802_223958Z.png",
@@ -1672,22 +1672,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA2_240_ZH_CMAX_20260803_000227Z.png",
           "timestamp_utc": "2026-08-03T00:02:27Z",
           "timestamp_argentina": "2026-08-02T21:02:27-03:00"
+        },
+        {
+          "filename": "RMA2_240_ZH_CMAX_20260803_001137Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA2_240_ZH_CMAX_20260803_001137Z.png",
+          "timestamp_utc": "2026-08-03T00:11:37Z",
+          "timestamp_argentina": "2026-08-02T21:11:37-03:00"
+        },
+        {
+          "filename": "RMA2_240_ZH_CMAX_20260803_002047Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA2_240_ZH_CMAX_20260803_002047Z.png",
+          "timestamp_utc": "2026-08-03T00:20:47Z",
+          "timestamp_argentina": "2026-08-02T21:20:47-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA2_240_ZH_CMAX_20260802_222137Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA2_240_ZH_CMAX_20260802_222137Z.png",
-          "timestamp_utc": "2026-08-02T22:21:37Z",
-          "timestamp_argentina": "2026-08-02T19:21:37-03:00"
-        },
-        {
-          "filename": "RMA2_240_ZH_CMAX_20260802_223048Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA2_240_ZH_CMAX_20260802_223048Z.png",
-          "timestamp_utc": "2026-08-02T22:30:48Z",
-          "timestamp_argentina": "2026-08-02T19:30:48-03:00"
-        },
-        {
           "filename": "RMA2_240_ZH_CMAX_20260802_223958Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA2_240_ZH_CMAX_20260802_223958Z.png",
           "timestamp_utc": "2026-08-02T22:39:58Z",
@@ -1746,6 +1746,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA2_240_ZH_CMAX_20260803_000227Z.png",
           "timestamp_utc": "2026-08-03T00:02:27Z",
           "timestamp_argentina": "2026-08-02T21:02:27-03:00"
+        },
+        {
+          "filename": "RMA2_240_ZH_CMAX_20260803_001137Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA2_240_ZH_CMAX_20260803_001137Z.png",
+          "timestamp_utc": "2026-08-03T00:11:37Z",
+          "timestamp_argentina": "2026-08-02T21:11:37-03:00"
+        },
+        {
+          "filename": "RMA2_240_ZH_CMAX_20260803_002047Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA2_240_ZH_CMAX_20260803_002047Z.png",
+          "timestamp_utc": "2026-08-03T00:20:47Z",
+          "timestamp_argentina": "2026-08-02T21:20:47-03:00"
         }
       ],
       "source": {
@@ -1763,31 +1775,19 @@
       "type": "radar",
       "province": "Corrientes",
       "status": "ok",
-      "age_minutes": 12,
-      "updated_at": "2026-08-02T21:06:05-03:00",
+      "age_minutes": 10,
+      "updated_at": "2026-08-02T21:22:24-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA17_240_ZH_CMAX_20260803_000605Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA17_240_ZH_CMAX_20260803_000605Z.png",
-        "timestamp_utc": "2026-08-03T00:06:05Z",
-        "timestamp_argentina": "2026-08-02T21:06:05-03:00"
+        "filename": "RMA17_240_ZH_CMAX_20260803_002224Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA17_240_ZH_CMAX_20260803_002224Z.png",
+        "timestamp_utc": "2026-08-03T00:22:24Z",
+        "timestamp_argentina": "2026-08-02T21:22:24-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA17_240_ZH_CMAX_20260802_223616Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA17_240_ZH_CMAX_20260802_223616Z.png",
-          "timestamp_utc": "2026-08-02T22:36:16Z",
-          "timestamp_argentina": "2026-08-02T19:36:16-03:00"
-        },
-        {
-          "filename": "RMA17_240_ZH_CMAX_20260802_224425Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA17_240_ZH_CMAX_20260802_224425Z.png",
-          "timestamp_utc": "2026-08-02T22:44:25Z",
-          "timestamp_argentina": "2026-08-02T19:44:25-03:00"
-        },
         {
           "filename": "RMA17_240_ZH_CMAX_20260802_225236Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA17_240_ZH_CMAX_20260802_225236Z.png",
@@ -1847,22 +1847,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA17_240_ZH_CMAX_20260803_000605Z.png",
           "timestamp_utc": "2026-08-03T00:06:05Z",
           "timestamp_argentina": "2026-08-02T21:06:05-03:00"
+        },
+        {
+          "filename": "RMA17_240_ZH_CMAX_20260803_001415Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA17_240_ZH_CMAX_20260803_001415Z.png",
+          "timestamp_utc": "2026-08-03T00:14:15Z",
+          "timestamp_argentina": "2026-08-02T21:14:15-03:00"
+        },
+        {
+          "filename": "RMA17_240_ZH_CMAX_20260803_002224Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA17_240_ZH_CMAX_20260803_002224Z.png",
+          "timestamp_utc": "2026-08-03T00:22:24Z",
+          "timestamp_argentina": "2026-08-02T21:22:24-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA17_240_ZH_CMAX_20260802_223616Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA17_240_ZH_CMAX_20260802_223616Z.png",
-          "timestamp_utc": "2026-08-02T22:36:16Z",
-          "timestamp_argentina": "2026-08-02T19:36:16-03:00"
-        },
-        {
-          "filename": "RMA17_240_ZH_CMAX_20260802_224425Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA17_240_ZH_CMAX_20260802_224425Z.png",
-          "timestamp_utc": "2026-08-02T22:44:25Z",
-          "timestamp_argentina": "2026-08-02T19:44:25-03:00"
-        },
-        {
           "filename": "RMA17_240_ZH_CMAX_20260802_225236Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA17_240_ZH_CMAX_20260802_225236Z.png",
           "timestamp_utc": "2026-08-02T22:52:36Z",
@@ -1921,6 +1921,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA17_240_ZH_CMAX_20260803_000605Z.png",
           "timestamp_utc": "2026-08-03T00:06:05Z",
           "timestamp_argentina": "2026-08-02T21:06:05-03:00"
+        },
+        {
+          "filename": "RMA17_240_ZH_CMAX_20260803_001415Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA17_240_ZH_CMAX_20260803_001415Z.png",
+          "timestamp_utc": "2026-08-03T00:14:15Z",
+          "timestamp_argentina": "2026-08-02T21:14:15-03:00"
+        },
+        {
+          "filename": "RMA17_240_ZH_CMAX_20260803_002224Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA17_240_ZH_CMAX_20260803_002224Z.png",
+          "timestamp_utc": "2026-08-03T00:22:24Z",
+          "timestamp_argentina": "2026-08-02T21:22:24-03:00"
         }
       ],
       "source": {
@@ -1938,25 +1950,19 @@
       "type": "radar",
       "province": "Río Negro",
       "status": "ok",
-      "age_minutes": 7,
-      "updated_at": "2026-08-02T21:11:05-03:00",
+      "age_minutes": 13,
+      "updated_at": "2026-08-02T21:20:06-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA12_240_ZH_CMAX_20260803_001105Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA12_240_ZH_CMAX_20260803_001105Z.png",
-        "timestamp_utc": "2026-08-03T00:11:05Z",
-        "timestamp_argentina": "2026-08-02T21:11:05-03:00"
+        "filename": "RMA12_240_ZH_CMAX_20260803_002006Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA12_240_ZH_CMAX_20260803_002006Z.png",
+        "timestamp_utc": "2026-08-03T00:20:06Z",
+        "timestamp_argentina": "2026-08-02T21:20:06-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA12_240_ZH_CMAX_20260802_223133Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA12_240_ZH_CMAX_20260802_223133Z.png",
-          "timestamp_utc": "2026-08-02T22:31:33Z",
-          "timestamp_argentina": "2026-08-02T19:31:33-03:00"
-        },
         {
           "filename": "RMA12_240_ZH_CMAX_20260802_224034Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA12_240_ZH_CMAX_20260802_224034Z.png",
@@ -2022,16 +2028,16 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA12_240_ZH_CMAX_20260803_001105Z.png",
           "timestamp_utc": "2026-08-03T00:11:05Z",
           "timestamp_argentina": "2026-08-02T21:11:05-03:00"
+        },
+        {
+          "filename": "RMA12_240_ZH_CMAX_20260803_002006Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA12_240_ZH_CMAX_20260803_002006Z.png",
+          "timestamp_utc": "2026-08-03T00:20:06Z",
+          "timestamp_argentina": "2026-08-02T21:20:06-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA12_240_ZH_CMAX_20260802_223133Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA12_240_ZH_CMAX_20260802_223133Z.png",
-          "timestamp_utc": "2026-08-02T22:31:33Z",
-          "timestamp_argentina": "2026-08-02T19:31:33-03:00"
-        },
-        {
           "filename": "RMA12_240_ZH_CMAX_20260802_224034Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA12_240_ZH_CMAX_20260802_224034Z.png",
           "timestamp_utc": "2026-08-02T22:40:34Z",
@@ -2096,6 +2102,12 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA12_240_ZH_CMAX_20260803_001105Z.png",
           "timestamp_utc": "2026-08-03T00:11:05Z",
           "timestamp_argentina": "2026-08-02T21:11:05-03:00"
+        },
+        {
+          "filename": "RMA12_240_ZH_CMAX_20260803_002006Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA12_240_ZH_CMAX_20260803_002006Z.png",
+          "timestamp_utc": "2026-08-03T00:20:06Z",
+          "timestamp_argentina": "2026-08-02T21:20:06-03:00"
         }
       ],
       "source": {
@@ -2113,31 +2125,19 @@
       "type": "radar",
       "province": "Formosa",
       "status": "ok",
-      "age_minutes": 11,
-      "updated_at": "2026-08-02T21:07:09-03:00",
+      "age_minutes": 8,
+      "updated_at": "2026-08-02T21:25:16-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA3_240_ZH_CMAX_20260803_000709Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA3_240_ZH_CMAX_20260803_000709Z.png",
-        "timestamp_utc": "2026-08-03T00:07:09Z",
-        "timestamp_argentina": "2026-08-02T21:07:09-03:00"
+        "filename": "RMA3_240_ZH_CMAX_20260803_002516Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA3_240_ZH_CMAX_20260803_002516Z.png",
+        "timestamp_utc": "2026-08-03T00:25:16Z",
+        "timestamp_argentina": "2026-08-02T21:25:16-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA3_240_ZH_CMAX_20260802_222739Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA3_240_ZH_CMAX_20260802_222739Z.png",
-          "timestamp_utc": "2026-08-02T22:27:39Z",
-          "timestamp_argentina": "2026-08-02T19:27:39-03:00"
-        },
-        {
-          "filename": "RMA3_240_ZH_CMAX_20260802_223640Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA3_240_ZH_CMAX_20260802_223640Z.png",
-          "timestamp_utc": "2026-08-02T22:36:40Z",
-          "timestamp_argentina": "2026-08-02T19:36:40-03:00"
-        },
         {
           "filename": "RMA3_240_ZH_CMAX_20260802_224544Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA3_240_ZH_CMAX_20260802_224544Z.png",
@@ -2197,22 +2197,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA3_240_ZH_CMAX_20260803_000709Z.png",
           "timestamp_utc": "2026-08-03T00:07:09Z",
           "timestamp_argentina": "2026-08-02T21:07:09-03:00"
+        },
+        {
+          "filename": "RMA3_240_ZH_CMAX_20260803_001613Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA3_240_ZH_CMAX_20260803_001613Z.png",
+          "timestamp_utc": "2026-08-03T00:16:13Z",
+          "timestamp_argentina": "2026-08-02T21:16:13-03:00"
+        },
+        {
+          "filename": "RMA3_240_ZH_CMAX_20260803_002516Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA3_240_ZH_CMAX_20260803_002516Z.png",
+          "timestamp_utc": "2026-08-03T00:25:16Z",
+          "timestamp_argentina": "2026-08-02T21:25:16-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA3_240_ZH_CMAX_20260802_222739Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA3_240_ZH_CMAX_20260802_222739Z.png",
-          "timestamp_utc": "2026-08-02T22:27:39Z",
-          "timestamp_argentina": "2026-08-02T19:27:39-03:00"
-        },
-        {
-          "filename": "RMA3_240_ZH_CMAX_20260802_223640Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA3_240_ZH_CMAX_20260802_223640Z.png",
-          "timestamp_utc": "2026-08-02T22:36:40Z",
-          "timestamp_argentina": "2026-08-02T19:36:40-03:00"
-        },
-        {
           "filename": "RMA3_240_ZH_CMAX_20260802_224544Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA3_240_ZH_CMAX_20260802_224544Z.png",
           "timestamp_utc": "2026-08-02T22:45:44Z",
@@ -2271,6 +2271,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA3_240_ZH_CMAX_20260803_000709Z.png",
           "timestamp_utc": "2026-08-03T00:07:09Z",
           "timestamp_argentina": "2026-08-02T21:07:09-03:00"
+        },
+        {
+          "filename": "RMA3_240_ZH_CMAX_20260803_001613Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA3_240_ZH_CMAX_20260803_001613Z.png",
+          "timestamp_utc": "2026-08-03T00:16:13Z",
+          "timestamp_argentina": "2026-08-02T21:16:13-03:00"
+        },
+        {
+          "filename": "RMA3_240_ZH_CMAX_20260803_002516Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA3_240_ZH_CMAX_20260803_002516Z.png",
+          "timestamp_utc": "2026-08-03T00:25:16Z",
+          "timestamp_argentina": "2026-08-02T21:25:16-03:00"
         }
       ],
       "source": {
@@ -2288,31 +2300,19 @@
       "type": "radar",
       "province": "Buenos Aires",
       "status": "ok",
-      "age_minutes": 12,
-      "updated_at": "2026-08-02T21:05:48-03:00",
+      "age_minutes": 9,
+      "updated_at": "2026-08-02T21:24:17-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA6_240_ZH_CMAX_20260803_000548Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA6_240_ZH_CMAX_20260803_000548Z.png",
-        "timestamp_utc": "2026-08-03T00:05:48Z",
-        "timestamp_argentina": "2026-08-02T21:05:48-03:00"
+        "filename": "RMA6_240_ZH_CMAX_20260803_002417Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA6_240_ZH_CMAX_20260803_002417Z.png",
+        "timestamp_utc": "2026-08-03T00:24:17Z",
+        "timestamp_argentina": "2026-08-02T21:24:17-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA6_240_ZH_CMAX_20260802_222413Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA6_240_ZH_CMAX_20260802_222413Z.png",
-          "timestamp_utc": "2026-08-02T22:24:13Z",
-          "timestamp_argentina": "2026-08-02T19:24:13-03:00"
-        },
-        {
-          "filename": "RMA6_240_ZH_CMAX_20260802_223326Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA6_240_ZH_CMAX_20260802_223326Z.png",
-          "timestamp_utc": "2026-08-02T22:33:26Z",
-          "timestamp_argentina": "2026-08-02T19:33:26-03:00"
-        },
         {
           "filename": "RMA6_240_ZH_CMAX_20260802_224240Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA6_240_ZH_CMAX_20260802_224240Z.png",
@@ -2372,22 +2372,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA6_240_ZH_CMAX_20260803_000548Z.png",
           "timestamp_utc": "2026-08-03T00:05:48Z",
           "timestamp_argentina": "2026-08-02T21:05:48-03:00"
+        },
+        {
+          "filename": "RMA6_240_ZH_CMAX_20260803_001502Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA6_240_ZH_CMAX_20260803_001502Z.png",
+          "timestamp_utc": "2026-08-03T00:15:02Z",
+          "timestamp_argentina": "2026-08-02T21:15:02-03:00"
+        },
+        {
+          "filename": "RMA6_240_ZH_CMAX_20260803_002417Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA6_240_ZH_CMAX_20260803_002417Z.png",
+          "timestamp_utc": "2026-08-03T00:24:17Z",
+          "timestamp_argentina": "2026-08-02T21:24:17-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA6_240_ZH_CMAX_20260802_222413Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA6_240_ZH_CMAX_20260802_222413Z.png",
-          "timestamp_utc": "2026-08-02T22:24:13Z",
-          "timestamp_argentina": "2026-08-02T19:24:13-03:00"
-        },
-        {
-          "filename": "RMA6_240_ZH_CMAX_20260802_223326Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA6_240_ZH_CMAX_20260802_223326Z.png",
-          "timestamp_utc": "2026-08-02T22:33:26Z",
-          "timestamp_argentina": "2026-08-02T19:33:26-03:00"
-        },
-        {
           "filename": "RMA6_240_ZH_CMAX_20260802_224240Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA6_240_ZH_CMAX_20260802_224240Z.png",
           "timestamp_utc": "2026-08-02T22:42:40Z",
@@ -2446,6 +2446,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA6_240_ZH_CMAX_20260803_000548Z.png",
           "timestamp_utc": "2026-08-03T00:05:48Z",
           "timestamp_argentina": "2026-08-02T21:05:48-03:00"
+        },
+        {
+          "filename": "RMA6_240_ZH_CMAX_20260803_001502Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA6_240_ZH_CMAX_20260803_001502Z.png",
+          "timestamp_utc": "2026-08-03T00:15:02Z",
+          "timestamp_argentina": "2026-08-02T21:15:02-03:00"
+        },
+        {
+          "filename": "RMA6_240_ZH_CMAX_20260803_002417Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA6_240_ZH_CMAX_20260803_002417Z.png",
+          "timestamp_utc": "2026-08-03T00:24:17Z",
+          "timestamp_argentina": "2026-08-02T21:24:17-03:00"
         }
       ],
       "source": {
@@ -2463,31 +2475,19 @@
       "type": "radar",
       "province": "Corrientes",
       "status": "ok",
-      "age_minutes": 13,
-      "updated_at": "2026-08-02T21:05:13-03:00",
+      "age_minutes": 10,
+      "updated_at": "2026-08-02T21:23:20-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA8_240_ZH_CMAX_20260803_000513Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA8_240_ZH_CMAX_20260803_000513Z.png",
-        "timestamp_utc": "2026-08-03T00:05:13Z",
-        "timestamp_argentina": "2026-08-02T21:05:13-03:00"
+        "filename": "RMA8_240_ZH_CMAX_20260803_002320Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA8_240_ZH_CMAX_20260803_002320Z.png",
+        "timestamp_utc": "2026-08-03T00:23:20Z",
+        "timestamp_argentina": "2026-08-02T21:23:20-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA8_240_ZH_CMAX_20260802_222545Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA8_240_ZH_CMAX_20260802_222545Z.png",
-          "timestamp_utc": "2026-08-02T22:25:45Z",
-          "timestamp_argentina": "2026-08-02T19:25:45-03:00"
-        },
-        {
-          "filename": "RMA8_240_ZH_CMAX_20260802_223448Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA8_240_ZH_CMAX_20260802_223448Z.png",
-          "timestamp_utc": "2026-08-02T22:34:48Z",
-          "timestamp_argentina": "2026-08-02T19:34:48-03:00"
-        },
         {
           "filename": "RMA8_240_ZH_CMAX_20260802_224351Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA8_240_ZH_CMAX_20260802_224351Z.png",
@@ -2547,22 +2547,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA8_240_ZH_CMAX_20260803_000513Z.png",
           "timestamp_utc": "2026-08-03T00:05:13Z",
           "timestamp_argentina": "2026-08-02T21:05:13-03:00"
+        },
+        {
+          "filename": "RMA8_240_ZH_CMAX_20260803_001417Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA8_240_ZH_CMAX_20260803_001417Z.png",
+          "timestamp_utc": "2026-08-03T00:14:17Z",
+          "timestamp_argentina": "2026-08-02T21:14:17-03:00"
+        },
+        {
+          "filename": "RMA8_240_ZH_CMAX_20260803_002320Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA8_240_ZH_CMAX_20260803_002320Z.png",
+          "timestamp_utc": "2026-08-03T00:23:20Z",
+          "timestamp_argentina": "2026-08-02T21:23:20-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA8_240_ZH_CMAX_20260802_222545Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA8_240_ZH_CMAX_20260802_222545Z.png",
-          "timestamp_utc": "2026-08-02T22:25:45Z",
-          "timestamp_argentina": "2026-08-02T19:25:45-03:00"
-        },
-        {
-          "filename": "RMA8_240_ZH_CMAX_20260802_223448Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA8_240_ZH_CMAX_20260802_223448Z.png",
-          "timestamp_utc": "2026-08-02T22:34:48Z",
-          "timestamp_argentina": "2026-08-02T19:34:48-03:00"
-        },
-        {
           "filename": "RMA8_240_ZH_CMAX_20260802_224351Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA8_240_ZH_CMAX_20260802_224351Z.png",
           "timestamp_utc": "2026-08-02T22:43:51Z",
@@ -2621,6 +2621,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA8_240_ZH_CMAX_20260803_000513Z.png",
           "timestamp_utc": "2026-08-03T00:05:13Z",
           "timestamp_argentina": "2026-08-02T21:05:13-03:00"
+        },
+        {
+          "filename": "RMA8_240_ZH_CMAX_20260803_001417Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA8_240_ZH_CMAX_20260803_001417Z.png",
+          "timestamp_utc": "2026-08-03T00:14:17Z",
+          "timestamp_argentina": "2026-08-02T21:14:17-03:00"
+        },
+        {
+          "filename": "RMA8_240_ZH_CMAX_20260803_002320Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA8_240_ZH_CMAX_20260803_002320Z.png",
+          "timestamp_utc": "2026-08-03T00:23:20Z",
+          "timestamp_argentina": "2026-08-02T21:23:20-03:00"
         }
       ],
       "source": {
@@ -2638,31 +2650,19 @@
       "type": "radar",
       "province": "Neuquén",
       "status": "ok",
-      "age_minutes": 11,
-      "updated_at": "2026-08-02T21:06:37-03:00",
+      "age_minutes": 8,
+      "updated_at": "2026-08-02T21:24:43-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA7_240_ZH_CMAX_20260803_000637Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA7_240_ZH_CMAX_20260803_000637Z.png",
-        "timestamp_utc": "2026-08-03T00:06:37Z",
-        "timestamp_argentina": "2026-08-02T21:06:37-03:00"
+        "filename": "RMA7_240_ZH_CMAX_20260803_002443Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA7_240_ZH_CMAX_20260803_002443Z.png",
+        "timestamp_utc": "2026-08-03T00:24:43Z",
+        "timestamp_argentina": "2026-08-02T21:24:43-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA7_240_ZH_CMAX_20260802_222709Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA7_240_ZH_CMAX_20260802_222709Z.png",
-          "timestamp_utc": "2026-08-02T22:27:09Z",
-          "timestamp_argentina": "2026-08-02T19:27:09-03:00"
-        },
-        {
-          "filename": "RMA7_240_ZH_CMAX_20260802_223612Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA7_240_ZH_CMAX_20260802_223612Z.png",
-          "timestamp_utc": "2026-08-02T22:36:12Z",
-          "timestamp_argentina": "2026-08-02T19:36:12-03:00"
-        },
         {
           "filename": "RMA7_240_ZH_CMAX_20260802_224514Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA7_240_ZH_CMAX_20260802_224514Z.png",
@@ -2722,22 +2722,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA7_240_ZH_CMAX_20260803_000637Z.png",
           "timestamp_utc": "2026-08-03T00:06:37Z",
           "timestamp_argentina": "2026-08-02T21:06:37-03:00"
+        },
+        {
+          "filename": "RMA7_240_ZH_CMAX_20260803_001540Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA7_240_ZH_CMAX_20260803_001540Z.png",
+          "timestamp_utc": "2026-08-03T00:15:40Z",
+          "timestamp_argentina": "2026-08-02T21:15:40-03:00"
+        },
+        {
+          "filename": "RMA7_240_ZH_CMAX_20260803_002443Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA7_240_ZH_CMAX_20260803_002443Z.png",
+          "timestamp_utc": "2026-08-03T00:24:43Z",
+          "timestamp_argentina": "2026-08-02T21:24:43-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA7_240_ZH_CMAX_20260802_222709Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA7_240_ZH_CMAX_20260802_222709Z.png",
-          "timestamp_utc": "2026-08-02T22:27:09Z",
-          "timestamp_argentina": "2026-08-02T19:27:09-03:00"
-        },
-        {
-          "filename": "RMA7_240_ZH_CMAX_20260802_223612Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA7_240_ZH_CMAX_20260802_223612Z.png",
-          "timestamp_utc": "2026-08-02T22:36:12Z",
-          "timestamp_argentina": "2026-08-02T19:36:12-03:00"
-        },
-        {
           "filename": "RMA7_240_ZH_CMAX_20260802_224514Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA7_240_ZH_CMAX_20260802_224514Z.png",
           "timestamp_utc": "2026-08-02T22:45:14Z",
@@ -2796,6 +2796,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA7_240_ZH_CMAX_20260803_000637Z.png",
           "timestamp_utc": "2026-08-03T00:06:37Z",
           "timestamp_argentina": "2026-08-02T21:06:37-03:00"
+        },
+        {
+          "filename": "RMA7_240_ZH_CMAX_20260803_001540Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA7_240_ZH_CMAX_20260803_001540Z.png",
+          "timestamp_utc": "2026-08-03T00:15:40Z",
+          "timestamp_argentina": "2026-08-02T21:15:40-03:00"
+        },
+        {
+          "filename": "RMA7_240_ZH_CMAX_20260803_002443Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA7_240_ZH_CMAX_20260803_002443Z.png",
+          "timestamp_utc": "2026-08-03T00:24:43Z",
+          "timestamp_argentina": "2026-08-02T21:24:43-03:00"
         }
       ],
       "source": {
@@ -2813,17 +2825,17 @@
       "type": "radar",
       "province": "Entre Ríos",
       "status": "ok",
-      "age_minutes": 8,
-      "updated_at": "2026-08-02T21:10:02-03:00",
+      "age_minutes": 13,
+      "updated_at": "2026-08-02T21:20:02-03:00",
       "counts": {
-        "frames": 11,
-        "animation_frames": 11
+        "frames": 12,
+        "animation_frames": 12
       },
       "latest": {
-        "filename": "PAR_240_ZH_CMAX_20260803_001002Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/PAR_240_ZH_CMAX_20260803_001002Z.png",
-        "timestamp_utc": "2026-08-03T00:10:02Z",
-        "timestamp_argentina": "2026-08-02T21:10:02-03:00"
+        "filename": "PAR_240_ZH_CMAX_20260803_002002Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/PAR_240_ZH_CMAX_20260803_002002Z.png",
+        "timestamp_utc": "2026-08-03T00:20:02Z",
+        "timestamp_argentina": "2026-08-02T21:20:02-03:00"
       },
       "animation_frames": [
         {
@@ -2891,6 +2903,12 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/PAR_240_ZH_CMAX_20260803_001002Z.png",
           "timestamp_utc": "2026-08-03T00:10:02Z",
           "timestamp_argentina": "2026-08-02T21:10:02-03:00"
+        },
+        {
+          "filename": "PAR_240_ZH_CMAX_20260803_002002Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/PAR_240_ZH_CMAX_20260803_002002Z.png",
+          "timestamp_utc": "2026-08-03T00:20:02Z",
+          "timestamp_argentina": "2026-08-02T21:20:02-03:00"
         }
       ],
       "frames": [
@@ -2959,6 +2977,12 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/PAR_240_ZH_CMAX_20260803_001002Z.png",
           "timestamp_utc": "2026-08-03T00:10:02Z",
           "timestamp_argentina": "2026-08-02T21:10:02-03:00"
+        },
+        {
+          "filename": "PAR_240_ZH_CMAX_20260803_002002Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/PAR_240_ZH_CMAX_20260803_002002Z.png",
+          "timestamp_utc": "2026-08-03T00:20:02Z",
+          "timestamp_argentina": "2026-08-02T21:20:02-03:00"
         }
       ],
       "source": {
@@ -2976,31 +3000,19 @@
       "type": "radar",
       "province": "La Rioja",
       "status": "ok",
-      "age_minutes": 14,
-      "updated_at": "2026-08-02T21:03:29-03:00",
+      "age_minutes": 13,
+      "updated_at": "2026-08-02T21:20:07-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA15_240_ZH_CMAX_20260803_000329Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA15_240_ZH_CMAX_20260803_000329Z.png",
-        "timestamp_utc": "2026-08-03T00:03:29Z",
-        "timestamp_argentina": "2026-08-02T21:03:29-03:00"
+        "filename": "RMA15_240_ZH_CMAX_20260803_002007Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA15_240_ZH_CMAX_20260803_002007Z.png",
+        "timestamp_utc": "2026-08-03T00:20:07Z",
+        "timestamp_argentina": "2026-08-02T21:20:07-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA15_240_ZH_CMAX_20260802_223216Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA15_240_ZH_CMAX_20260802_223216Z.png",
-          "timestamp_utc": "2026-08-02T22:32:16Z",
-          "timestamp_argentina": "2026-08-02T19:32:16-03:00"
-        },
-        {
-          "filename": "RMA15_240_ZH_CMAX_20260802_224029Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA15_240_ZH_CMAX_20260802_224029Z.png",
-          "timestamp_utc": "2026-08-02T22:40:29Z",
-          "timestamp_argentina": "2026-08-02T19:40:29-03:00"
-        },
         {
           "filename": "RMA15_240_ZH_CMAX_20260802_224852Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA15_240_ZH_CMAX_20260802_224852Z.png",
@@ -3060,22 +3072,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA15_240_ZH_CMAX_20260803_000329Z.png",
           "timestamp_utc": "2026-08-03T00:03:29Z",
           "timestamp_argentina": "2026-08-02T21:03:29-03:00"
+        },
+        {
+          "filename": "RMA15_240_ZH_CMAX_20260803_001149Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA15_240_ZH_CMAX_20260803_001149Z.png",
+          "timestamp_utc": "2026-08-03T00:11:49Z",
+          "timestamp_argentina": "2026-08-02T21:11:49-03:00"
+        },
+        {
+          "filename": "RMA15_240_ZH_CMAX_20260803_002007Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA15_240_ZH_CMAX_20260803_002007Z.png",
+          "timestamp_utc": "2026-08-03T00:20:07Z",
+          "timestamp_argentina": "2026-08-02T21:20:07-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA15_240_ZH_CMAX_20260802_223216Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA15_240_ZH_CMAX_20260802_223216Z.png",
-          "timestamp_utc": "2026-08-02T22:32:16Z",
-          "timestamp_argentina": "2026-08-02T19:32:16-03:00"
-        },
-        {
-          "filename": "RMA15_240_ZH_CMAX_20260802_224029Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA15_240_ZH_CMAX_20260802_224029Z.png",
-          "timestamp_utc": "2026-08-02T22:40:29Z",
-          "timestamp_argentina": "2026-08-02T19:40:29-03:00"
-        },
-        {
           "filename": "RMA15_240_ZH_CMAX_20260802_224852Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA15_240_ZH_CMAX_20260802_224852Z.png",
           "timestamp_utc": "2026-08-02T22:48:52Z",
@@ -3134,6 +3146,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA15_240_ZH_CMAX_20260803_000329Z.png",
           "timestamp_utc": "2026-08-03T00:03:29Z",
           "timestamp_argentina": "2026-08-02T21:03:29-03:00"
+        },
+        {
+          "filename": "RMA15_240_ZH_CMAX_20260803_001149Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA15_240_ZH_CMAX_20260803_001149Z.png",
+          "timestamp_utc": "2026-08-03T00:11:49Z",
+          "timestamp_argentina": "2026-08-02T21:11:49-03:00"
+        },
+        {
+          "filename": "RMA15_240_ZH_CMAX_20260803_002007Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA15_240_ZH_CMAX_20260803_002007Z.png",
+          "timestamp_utc": "2026-08-03T00:20:07Z",
+          "timestamp_argentina": "2026-08-02T21:20:07-03:00"
         }
       ],
       "source": {
@@ -3175,25 +3199,19 @@
       "type": "radar",
       "province": "Chaco",
       "status": "ok",
-      "age_minutes": 8,
-      "updated_at": "2026-08-02T21:09:35-03:00",
+      "age_minutes": 14,
+      "updated_at": "2026-08-02T21:18:36-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA4_240_ZH_CMAX_20260803_000935Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA4_240_ZH_CMAX_20260803_000935Z.png",
-        "timestamp_utc": "2026-08-03T00:09:35Z",
-        "timestamp_argentina": "2026-08-02T21:09:35-03:00"
+        "filename": "RMA4_240_ZH_CMAX_20260803_001836Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA4_240_ZH_CMAX_20260803_001836Z.png",
+        "timestamp_utc": "2026-08-03T00:18:36Z",
+        "timestamp_argentina": "2026-08-02T21:18:36-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA4_240_ZH_CMAX_20260802_223012Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA4_240_ZH_CMAX_20260802_223012Z.png",
-          "timestamp_utc": "2026-08-02T22:30:12Z",
-          "timestamp_argentina": "2026-08-02T19:30:12-03:00"
-        },
         {
           "filename": "RMA4_240_ZH_CMAX_20260802_223913Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA4_240_ZH_CMAX_20260802_223913Z.png",
@@ -3259,16 +3277,16 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA4_240_ZH_CMAX_20260803_000935Z.png",
           "timestamp_utc": "2026-08-03T00:09:35Z",
           "timestamp_argentina": "2026-08-02T21:09:35-03:00"
+        },
+        {
+          "filename": "RMA4_240_ZH_CMAX_20260803_001836Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA4_240_ZH_CMAX_20260803_001836Z.png",
+          "timestamp_utc": "2026-08-03T00:18:36Z",
+          "timestamp_argentina": "2026-08-02T21:18:36-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA4_240_ZH_CMAX_20260802_223012Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA4_240_ZH_CMAX_20260802_223012Z.png",
-          "timestamp_utc": "2026-08-02T22:30:12Z",
-          "timestamp_argentina": "2026-08-02T19:30:12-03:00"
-        },
-        {
           "filename": "RMA4_240_ZH_CMAX_20260802_223913Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA4_240_ZH_CMAX_20260802_223913Z.png",
           "timestamp_utc": "2026-08-02T22:39:13Z",
@@ -3333,6 +3351,12 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA4_240_ZH_CMAX_20260803_000935Z.png",
           "timestamp_utc": "2026-08-03T00:09:35Z",
           "timestamp_argentina": "2026-08-02T21:09:35-03:00"
+        },
+        {
+          "filename": "RMA4_240_ZH_CMAX_20260803_001836Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA4_240_ZH_CMAX_20260803_001836Z.png",
+          "timestamp_utc": "2026-08-03T00:18:36Z",
+          "timestamp_argentina": "2026-08-02T21:18:36-03:00"
         }
       ],
       "source": {
@@ -3350,31 +3374,19 @@
       "type": "radar",
       "province": "Tierra del Fuego",
       "status": "ok",
-      "age_minutes": 13,
-      "updated_at": "2026-08-02T21:04:44-03:00",
+      "age_minutes": 10,
+      "updated_at": "2026-08-02T21:22:49-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA9_240_ZH_CMAX_20260803_000444Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA9_240_ZH_CMAX_20260803_000444Z.png",
-        "timestamp_utc": "2026-08-03T00:04:44Z",
-        "timestamp_argentina": "2026-08-02T21:04:44-03:00"
+        "filename": "RMA9_240_ZH_CMAX_20260803_002249Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA9_240_ZH_CMAX_20260803_002249Z.png",
+        "timestamp_utc": "2026-08-03T00:22:49Z",
+        "timestamp_argentina": "2026-08-02T21:22:49-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA9_240_ZH_CMAX_20260802_222509Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA9_240_ZH_CMAX_20260802_222509Z.png",
-          "timestamp_utc": "2026-08-02T22:25:09Z",
-          "timestamp_argentina": "2026-08-02T19:25:09-03:00"
-        },
-        {
-          "filename": "RMA9_240_ZH_CMAX_20260802_223412Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA9_240_ZH_CMAX_20260802_223412Z.png",
-          "timestamp_utc": "2026-08-02T22:34:12Z",
-          "timestamp_argentina": "2026-08-02T19:34:12-03:00"
-        },
         {
           "filename": "RMA9_240_ZH_CMAX_20260802_224315Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA9_240_ZH_CMAX_20260802_224315Z.png",
@@ -3434,22 +3446,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA9_240_ZH_CMAX_20260803_000444Z.png",
           "timestamp_utc": "2026-08-03T00:04:44Z",
           "timestamp_argentina": "2026-08-02T21:04:44-03:00"
+        },
+        {
+          "filename": "RMA9_240_ZH_CMAX_20260803_001345Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA9_240_ZH_CMAX_20260803_001345Z.png",
+          "timestamp_utc": "2026-08-03T00:13:45Z",
+          "timestamp_argentina": "2026-08-02T21:13:45-03:00"
+        },
+        {
+          "filename": "RMA9_240_ZH_CMAX_20260803_002249Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA9_240_ZH_CMAX_20260803_002249Z.png",
+          "timestamp_utc": "2026-08-03T00:22:49Z",
+          "timestamp_argentina": "2026-08-02T21:22:49-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA9_240_ZH_CMAX_20260802_222509Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA9_240_ZH_CMAX_20260802_222509Z.png",
-          "timestamp_utc": "2026-08-02T22:25:09Z",
-          "timestamp_argentina": "2026-08-02T19:25:09-03:00"
-        },
-        {
-          "filename": "RMA9_240_ZH_CMAX_20260802_223412Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA9_240_ZH_CMAX_20260802_223412Z.png",
-          "timestamp_utc": "2026-08-02T22:34:12Z",
-          "timestamp_argentina": "2026-08-02T19:34:12-03:00"
-        },
-        {
           "filename": "RMA9_240_ZH_CMAX_20260802_224315Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA9_240_ZH_CMAX_20260802_224315Z.png",
           "timestamp_utc": "2026-08-02T22:43:15Z",
@@ -3508,6 +3520,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA9_240_ZH_CMAX_20260803_000444Z.png",
           "timestamp_utc": "2026-08-03T00:04:44Z",
           "timestamp_argentina": "2026-08-02T21:04:44-03:00"
+        },
+        {
+          "filename": "RMA9_240_ZH_CMAX_20260803_001345Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA9_240_ZH_CMAX_20260803_001345Z.png",
+          "timestamp_utc": "2026-08-03T00:13:45Z",
+          "timestamp_argentina": "2026-08-02T21:13:45-03:00"
+        },
+        {
+          "filename": "RMA9_240_ZH_CMAX_20260803_002249Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA9_240_ZH_CMAX_20260803_002249Z.png",
+          "timestamp_utc": "2026-08-03T00:22:49Z",
+          "timestamp_argentina": "2026-08-02T21:22:49-03:00"
         }
       ],
       "source": {
@@ -3525,31 +3549,19 @@
       "type": "radar",
       "province": "La Pampa",
       "status": "ok",
-      "age_minutes": 13,
-      "updated_at": "2026-08-02T21:05:09-03:00",
+      "age_minutes": 12,
+      "updated_at": "2026-08-02T21:21:29-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA18_240_ZH_CMAX_20260803_000509Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA18_240_ZH_CMAX_20260803_000509Z.png",
-        "timestamp_utc": "2026-08-03T00:05:09Z",
-        "timestamp_argentina": "2026-08-02T21:05:09-03:00"
+        "filename": "RMA18_240_ZH_CMAX_20260803_002129Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA18_240_ZH_CMAX_20260803_002129Z.png",
+        "timestamp_utc": "2026-08-03T00:21:29Z",
+        "timestamp_argentina": "2026-08-02T21:21:29-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA18_240_ZH_CMAX_20260802_222645Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA18_240_ZH_CMAX_20260802_222645Z.png",
-          "timestamp_utc": "2026-08-02T22:26:45Z",
-          "timestamp_argentina": "2026-08-02T19:26:45-03:00"
-        },
-        {
-          "filename": "RMA18_240_ZH_CMAX_20260802_223500Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA18_240_ZH_CMAX_20260802_223500Z.png",
-          "timestamp_utc": "2026-08-02T22:35:00Z",
-          "timestamp_argentina": "2026-08-02T19:35:00-03:00"
-        },
         {
           "filename": "RMA18_240_ZH_CMAX_20260802_224310Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA18_240_ZH_CMAX_20260802_224310Z.png",
@@ -3609,22 +3621,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA18_240_ZH_CMAX_20260803_000509Z.png",
           "timestamp_utc": "2026-08-03T00:05:09Z",
           "timestamp_argentina": "2026-08-02T21:05:09-03:00"
+        },
+        {
+          "filename": "RMA18_240_ZH_CMAX_20260803_001318Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA18_240_ZH_CMAX_20260803_001318Z.png",
+          "timestamp_utc": "2026-08-03T00:13:18Z",
+          "timestamp_argentina": "2026-08-02T21:13:18-03:00"
+        },
+        {
+          "filename": "RMA18_240_ZH_CMAX_20260803_002129Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA18_240_ZH_CMAX_20260803_002129Z.png",
+          "timestamp_utc": "2026-08-03T00:21:29Z",
+          "timestamp_argentina": "2026-08-02T21:21:29-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA18_240_ZH_CMAX_20260802_222645Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA18_240_ZH_CMAX_20260802_222645Z.png",
-          "timestamp_utc": "2026-08-02T22:26:45Z",
-          "timestamp_argentina": "2026-08-02T19:26:45-03:00"
-        },
-        {
-          "filename": "RMA18_240_ZH_CMAX_20260802_223500Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA18_240_ZH_CMAX_20260802_223500Z.png",
-          "timestamp_utc": "2026-08-02T22:35:00Z",
-          "timestamp_argentina": "2026-08-02T19:35:00-03:00"
-        },
-        {
           "filename": "RMA18_240_ZH_CMAX_20260802_224310Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA18_240_ZH_CMAX_20260802_224310Z.png",
           "timestamp_utc": "2026-08-02T22:43:10Z",
@@ -3683,6 +3695,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA18_240_ZH_CMAX_20260803_000509Z.png",
           "timestamp_utc": "2026-08-03T00:05:09Z",
           "timestamp_argentina": "2026-08-02T21:05:09-03:00"
+        },
+        {
+          "filename": "RMA18_240_ZH_CMAX_20260803_001318Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA18_240_ZH_CMAX_20260803_001318Z.png",
+          "timestamp_utc": "2026-08-03T00:13:18Z",
+          "timestamp_argentina": "2026-08-02T21:13:18-03:00"
+        },
+        {
+          "filename": "RMA18_240_ZH_CMAX_20260803_002129Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA18_240_ZH_CMAX_20260803_002129Z.png",
+          "timestamp_utc": "2026-08-03T00:21:29Z",
+          "timestamp_argentina": "2026-08-02T21:21:29-03:00"
         }
       ],
       "source": {
@@ -3700,31 +3724,19 @@
       "type": "radar",
       "province": "Santiago del Estero",
       "status": "ok",
-      "age_minutes": 11,
-      "updated_at": "2026-08-02T21:06:37-03:00",
+      "age_minutes": 9,
+      "updated_at": "2026-08-02T21:23:57-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA11_240_ZH_CMAX_20260803_000637Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA11_240_ZH_CMAX_20260803_000637Z.png",
-        "timestamp_utc": "2026-08-03T00:06:37Z",
-        "timestamp_argentina": "2026-08-02T21:06:37-03:00"
+        "filename": "RMA11_240_ZH_CMAX_20260803_002357Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA11_240_ZH_CMAX_20260803_002357Z.png",
+        "timestamp_utc": "2026-08-03T00:23:57Z",
+        "timestamp_argentina": "2026-08-02T21:23:57-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA11_240_ZH_CMAX_20260802_223122Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA11_240_ZH_CMAX_20260802_223122Z.png",
-          "timestamp_utc": "2026-08-02T22:31:22Z",
-          "timestamp_argentina": "2026-08-02T19:31:22-03:00"
-        },
-        {
-          "filename": "RMA11_240_ZH_CMAX_20260802_224002Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA11_240_ZH_CMAX_20260802_224002Z.png",
-          "timestamp_utc": "2026-08-02T22:40:02Z",
-          "timestamp_argentina": "2026-08-02T19:40:02-03:00"
-        },
         {
           "filename": "RMA11_240_ZH_CMAX_20260802_224842Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA11_240_ZH_CMAX_20260802_224842Z.png",
@@ -3784,22 +3796,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA11_240_ZH_CMAX_20260803_000637Z.png",
           "timestamp_utc": "2026-08-03T00:06:37Z",
           "timestamp_argentina": "2026-08-02T21:06:37-03:00"
+        },
+        {
+          "filename": "RMA11_240_ZH_CMAX_20260803_001517Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA11_240_ZH_CMAX_20260803_001517Z.png",
+          "timestamp_utc": "2026-08-03T00:15:17Z",
+          "timestamp_argentina": "2026-08-02T21:15:17-03:00"
+        },
+        {
+          "filename": "RMA11_240_ZH_CMAX_20260803_002357Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA11_240_ZH_CMAX_20260803_002357Z.png",
+          "timestamp_utc": "2026-08-03T00:23:57Z",
+          "timestamp_argentina": "2026-08-02T21:23:57-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA11_240_ZH_CMAX_20260802_223122Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA11_240_ZH_CMAX_20260802_223122Z.png",
-          "timestamp_utc": "2026-08-02T22:31:22Z",
-          "timestamp_argentina": "2026-08-02T19:31:22-03:00"
-        },
-        {
-          "filename": "RMA11_240_ZH_CMAX_20260802_224002Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA11_240_ZH_CMAX_20260802_224002Z.png",
-          "timestamp_utc": "2026-08-02T22:40:02Z",
-          "timestamp_argentina": "2026-08-02T19:40:02-03:00"
-        },
-        {
           "filename": "RMA11_240_ZH_CMAX_20260802_224842Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA11_240_ZH_CMAX_20260802_224842Z.png",
           "timestamp_utc": "2026-08-02T22:48:42Z",
@@ -3858,6 +3870,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA11_240_ZH_CMAX_20260803_000637Z.png",
           "timestamp_utc": "2026-08-03T00:06:37Z",
           "timestamp_argentina": "2026-08-02T21:06:37-03:00"
+        },
+        {
+          "filename": "RMA11_240_ZH_CMAX_20260803_001517Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA11_240_ZH_CMAX_20260803_001517Z.png",
+          "timestamp_utc": "2026-08-03T00:15:17Z",
+          "timestamp_argentina": "2026-08-02T21:15:17-03:00"
+        },
+        {
+          "filename": "RMA11_240_ZH_CMAX_20260803_002357Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA11_240_ZH_CMAX_20260803_002357Z.png",
+          "timestamp_utc": "2026-08-03T00:23:57Z",
+          "timestamp_argentina": "2026-08-02T21:23:57-03:00"
         }
       ],
       "source": {
@@ -3874,59 +3898,16 @@
       "name": "Villa Reynolds",
       "type": "radar",
       "province": "San Luis",
-      "status": "ok",
-      "age_minutes": 25,
-      "updated_at": "2026-08-02T20:53:26-03:00",
+      "status": "no_data",
+      "age_minutes": null,
+      "updated_at": null,
       "counts": {
-        "frames": 3,
-        "animation_frames": 3
+        "frames": 0,
+        "animation_frames": 0
       },
-      "latest": {
-        "filename": "RMA13_240_ZH_CMAX_20260802_235326Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA13_240_ZH_CMAX_20260802_235326Z.png",
-        "timestamp_utc": "2026-08-02T23:53:26Z",
-        "timestamp_argentina": "2026-08-02T20:53:26-03:00"
-      },
-      "animation_frames": [
-        {
-          "filename": "RMA13_240_ZH_CMAX_20260802_232824Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA13_240_ZH_CMAX_20260802_232824Z.png",
-          "timestamp_utc": "2026-08-02T23:28:24Z",
-          "timestamp_argentina": "2026-08-02T20:28:24-03:00"
-        },
-        {
-          "filename": "RMA13_240_ZH_CMAX_20260802_233645Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA13_240_ZH_CMAX_20260802_233645Z.png",
-          "timestamp_utc": "2026-08-02T23:36:45Z",
-          "timestamp_argentina": "2026-08-02T20:36:45-03:00"
-        },
-        {
-          "filename": "RMA13_240_ZH_CMAX_20260802_235326Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA13_240_ZH_CMAX_20260802_235326Z.png",
-          "timestamp_utc": "2026-08-02T23:53:26Z",
-          "timestamp_argentina": "2026-08-02T20:53:26-03:00"
-        }
-      ],
-      "frames": [
-        {
-          "filename": "RMA13_240_ZH_CMAX_20260802_232824Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA13_240_ZH_CMAX_20260802_232824Z.png",
-          "timestamp_utc": "2026-08-02T23:28:24Z",
-          "timestamp_argentina": "2026-08-02T20:28:24-03:00"
-        },
-        {
-          "filename": "RMA13_240_ZH_CMAX_20260802_233645Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA13_240_ZH_CMAX_20260802_233645Z.png",
-          "timestamp_utc": "2026-08-02T23:36:45Z",
-          "timestamp_argentina": "2026-08-02T20:36:45-03:00"
-        },
-        {
-          "filename": "RMA13_240_ZH_CMAX_20260802_235326Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA13_240_ZH_CMAX_20260802_235326Z.png",
-          "timestamp_utc": "2026-08-02T23:53:26Z",
-          "timestamp_argentina": "2026-08-02T20:53:26-03:00"
-        }
-      ],
+      "latest": null,
+      "animation_frames": [],
+      "frames": [],
       "source": {
         "inventory_endpoint": "https://ws1.smn.gob.ar/v1/images/radar/RMA13_240",
         "static_base_url": "https://estaticos.smn.gob.ar/vmsr/radar/",
@@ -3942,31 +3923,19 @@
       "type": "radar",
       "province": null,
       "status": "ok",
-      "age_minutes": 13,
-      "updated_at": "2026-08-02T21:05:12-03:00",
+      "age_minutes": 11,
+      "updated_at": "2026-08-02T21:21:38-03:00",
       "counts": {
         "frames": 12,
         "animation_frames": 12
       },
       "latest": {
-        "filename": "RMA20_240_ZH_CMAX_20260803_000512Z.png",
-        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA20_240_ZH_CMAX_20260803_000512Z.png",
-        "timestamp_utc": "2026-08-03T00:05:12Z",
-        "timestamp_argentina": "2026-08-02T21:05:12-03:00"
+        "filename": "RMA20_240_ZH_CMAX_20260803_002138Z.png",
+        "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA20_240_ZH_CMAX_20260803_002138Z.png",
+        "timestamp_utc": "2026-08-03T00:21:38Z",
+        "timestamp_argentina": "2026-08-02T21:21:38-03:00"
       },
       "animation_frames": [
-        {
-          "filename": "RMA20_240_ZH_CMAX_20260802_223454Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA20_240_ZH_CMAX_20260802_223454Z.png",
-          "timestamp_utc": "2026-08-02T22:34:54Z",
-          "timestamp_argentina": "2026-08-02T19:34:54-03:00"
-        },
-        {
-          "filename": "RMA20_240_ZH_CMAX_20260802_224307Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA20_240_ZH_CMAX_20260802_224307Z.png",
-          "timestamp_utc": "2026-08-02T22:43:07Z",
-          "timestamp_argentina": "2026-08-02T19:43:07-03:00"
-        },
         {
           "filename": "RMA20_240_ZH_CMAX_20260802_225122Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA20_240_ZH_CMAX_20260802_225122Z.png",
@@ -4026,22 +3995,22 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA20_240_ZH_CMAX_20260803_000512Z.png",
           "timestamp_utc": "2026-08-03T00:05:12Z",
           "timestamp_argentina": "2026-08-02T21:05:12-03:00"
+        },
+        {
+          "filename": "RMA20_240_ZH_CMAX_20260803_001326Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA20_240_ZH_CMAX_20260803_001326Z.png",
+          "timestamp_utc": "2026-08-03T00:13:26Z",
+          "timestamp_argentina": "2026-08-02T21:13:26-03:00"
+        },
+        {
+          "filename": "RMA20_240_ZH_CMAX_20260803_002138Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA20_240_ZH_CMAX_20260803_002138Z.png",
+          "timestamp_utc": "2026-08-03T00:21:38Z",
+          "timestamp_argentina": "2026-08-02T21:21:38-03:00"
         }
       ],
       "frames": [
         {
-          "filename": "RMA20_240_ZH_CMAX_20260802_223454Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA20_240_ZH_CMAX_20260802_223454Z.png",
-          "timestamp_utc": "2026-08-02T22:34:54Z",
-          "timestamp_argentina": "2026-08-02T19:34:54-03:00"
-        },
-        {
-          "filename": "RMA20_240_ZH_CMAX_20260802_224307Z.png",
-          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA20_240_ZH_CMAX_20260802_224307Z.png",
-          "timestamp_utc": "2026-08-02T22:43:07Z",
-          "timestamp_argentina": "2026-08-02T19:43:07-03:00"
-        },
-        {
           "filename": "RMA20_240_ZH_CMAX_20260802_225122Z.png",
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA20_240_ZH_CMAX_20260802_225122Z.png",
           "timestamp_utc": "2026-08-02T22:51:22Z",
@@ -4100,6 +4069,18 @@
           "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA20_240_ZH_CMAX_20260803_000512Z.png",
           "timestamp_utc": "2026-08-03T00:05:12Z",
           "timestamp_argentina": "2026-08-02T21:05:12-03:00"
+        },
+        {
+          "filename": "RMA20_240_ZH_CMAX_20260803_001326Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA20_240_ZH_CMAX_20260803_001326Z.png",
+          "timestamp_utc": "2026-08-03T00:13:26Z",
+          "timestamp_argentina": "2026-08-02T21:13:26-03:00"
+        },
+        {
+          "filename": "RMA20_240_ZH_CMAX_20260803_002138Z.png",
+          "url": "https://estaticos.smn.gob.ar/vmsr/radar/RMA20_240_ZH_CMAX_20260803_002138Z.png",
+          "timestamp_utc": "2026-08-03T00:21:38Z",
+          "timestamp_argentina": "2026-08-02T21:21:38-03:00"
         }
       ],
       "source": {
